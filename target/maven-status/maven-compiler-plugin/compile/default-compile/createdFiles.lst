@@ -1,0 +1,17 @@
+ui\delivery\ItemPage.class
+ui\findItem\MainPage.class
+ui\promo\ItemPage.class
+ui\delivery\MainPage.class
+config\UserConfig.class
+ui\auth\SingInPage.class
+ui\findItem\ItemPage.class
+ui\sales\MainPage.class
+ui\findItem\CartPage.class
+ui\promo\MainPage.class
+ui\filter\ItemPage.class
+ui\promo\CartPage.class
+ui\subscribe\MainPage.class
+ui\auth\MainPage.class
+ui\delivery\CartPage.class
+ui\filter\MainPage.class
+ui\delivery\DeliveryPage.class
