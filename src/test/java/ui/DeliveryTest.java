@@ -1,9 +1,9 @@
 package ui;
 
-import ui.delivery.CartPage;
+import ui.delivery.CartDeliveryPage;
 import ui.delivery.DeliveryPage;
-import ui.delivery.ItemPage;
-import ui.delivery.MainPage;
+import ui.delivery.ItemDeliveryPage;
+import ui.delivery.MainDeliveryPage;
 import com.codeborne.selenide.Configuration;
 import config.UserConfig;
 import org.junit.jupiter.api.Assertions;
@@ -23,19 +23,19 @@ public class DeliveryTest {
     public void testDeliveryItem() {
         open("https://fizcult.by/");
 
-        MainPage mainPage = page(MainPage.class);
+        MainDeliveryPage mainDeliveryPage = page(MainDeliveryPage.class);
 
-        ItemPage itemPage = mainPage
+        ItemDeliveryPage itemDeliveryPage = mainDeliveryPage
                 .clickButton()
                 .checkIsotonicButton()
                 .selectItem();
 
-        CartPage cartPage = itemPage
+        CartDeliveryPage cartDeliveryPage = itemDeliveryPage
                 .addNumber()
                 .addToCart()
                 .openCart();
 
-        DeliveryPage deliveryPage = cartPage
+        DeliveryPage deliveryPage = cartDeliveryPage
                 .orderToItem();
         deliveryPage.addressSelect()
                 .daySelect()

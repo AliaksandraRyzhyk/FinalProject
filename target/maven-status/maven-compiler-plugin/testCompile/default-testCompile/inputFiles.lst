@@ -1,10 +1,9 @@
+E:\IT academy\Финальный проект\FinalProject\src\test\java\api\runner\RunnerTest.java
 E:\IT academy\Финальный проект\FinalProject\src\test\java\api\steps\importContact\UnsubscribeEmailTest.java
 E:\IT academy\Финальный проект\FinalProject\src\test\java\api\steps\importContact\ImportContactsListTest.java
 E:\IT academy\Финальный проект\FinalProject\src\test\java\ui\FilterTest.java
 E:\IT academy\Финальный проект\FinalProject\src\test\java\api\steps\contactList\GetListTest.java
 E:\IT academy\Финальный проект\FinalProject\src\test\java\ui\SubscribeTest.java
-E:\IT academy\Финальный проект\FinalProject\src\test\java\api\runner\RunnerImportTest.java
-E:\IT academy\Финальный проект\FinalProject\src\test\java\api\runner\RunnerCreateTest.java
 E:\IT academy\Финальный проект\FinalProject\src\test\java\api\steps\contactList\CreateListTest.java
 E:\IT academy\Финальный проект\FinalProject\src\test\java\ui\DeliveryTest.java
 E:\IT academy\Финальный проект\FinalProject\src\test\java\api\steps\emailTemplate\GetTemplates.java
@@ -12,11 +11,11 @@ E:\IT academy\Финальный проект\FinalProject\src\test\java\api\steps\importContac
 E:\IT academy\Финальный проект\FinalProject\src\test\java\ui\PromoTest.java
 E:\IT academy\Финальный проект\FinalProject\src\test\java\ui\SalesTest.java
 E:\IT academy\Финальный проект\FinalProject\src\test\java\ui\AuthTest.java
+E:\IT academy\Финальный проект\FinalProject\src\test\java\api\steps\auth\AuthWithTokenTest.java
 E:\IT academy\Финальный проект\FinalProject\src\test\java\api\steps\contactList\UpdateListTest.java
 E:\IT academy\Финальный проект\FinalProject\src\test\java\ui\FindItemTest.java
 E:\IT academy\Финальный проект\FinalProject\src\test\java\api\steps\emailTemplate\CreateEmailTemplate.java
 E:\IT academy\Финальный проект\FinalProject\src\test\java\api\steps\emailTemplate\UpdateEmailTemplate.java
 E:\IT academy\Финальный проект\FinalProject\src\test\java\api\steps\importContact\ExcludeEmailTest.java
-E:\IT academy\Финальный проект\FinalProject\src\test\java\api\runner\RunnerEmailTemplate.java
 E:\IT academy\Финальный проект\FinalProject\src\test\java\api\steps\contactList\DeleteListTest.java
 E:\IT academy\Финальный проект\FinalProject\src\test\java\api\steps\importContact\SubscribeEmailTest.java

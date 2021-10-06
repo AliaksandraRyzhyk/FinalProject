@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: ui.FindItemTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.304 s <<< FAILURE! - in ui.FindItemTest
-ui.FindItemTest.testFindItem(String, String, String)[1]  Time elapsed: 6.296 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.041 s <<< FAILURE! - in ui.FindItemTest
+ui.FindItemTest.testFindItem(String, String, String)[1]  Time elapsed: 7.035 s  <<< FAILURE!
 com.codeborne.selenide.ex.ElementNotFound: 
-Element not found {By.xpath: //h3.findBy(text 'CARBONOX')}
-Expected: text 'CARBONOX'
-Screenshot: file:/E:/IT%20academy/Финальный%20проект/FinalProject/build/reports/tests/1632069492417.1.png
-Page source: file:/E:/IT%20academy/Финальный%20проект/FinalProject/build/reports/tests/1632069492417.1.html
+Element not found {By.xpath: //h3.findBy(text 'DEXTREX JUICE')}
+Expected: text 'DEXTREX JUICE'
+Screenshot: file:/E:/IT%20academy/Финальный%20проект/FinalProject/build/reports/tests/1633547254180.1.png
+Page source: file:/E:/IT%20academy/Финальный%20проект/FinalProject/build/reports/tests/1633547254180.1.html
 Timeout: 4 s.
-	at ui.FindItemTest.testFindItem(FindItemTest.java:29)
+	at ui.FindItemTest.testFindItem(FindItemTest.java:30)
 

@@ -4,9 +4,9 @@ import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import ui.promo.CartPage;
-import ui.promo.ItemPage;
-import ui.promo.MainPage;
+import ui.promo.CartPromoPage;
+import ui.promo.ItemPromoPage;
+import ui.promo.MainPromoPage;
 
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.page;
@@ -23,19 +23,19 @@ public class PromoTest {
     public void testPromoSubscribe(String search, String expectedResult) {
         open("https://fizcult.by/");
 
-        MainPage mainPage = page(MainPage.class);
+        MainPromoPage mainPromoPage = page(MainPromoPage.class);
 
-        ItemPage itemPage = mainPage
+        ItemPromoPage itemPromoPage = mainPromoPage
                 .hoverOverGoal()
                 .checkTreatment()
                 .selectItem();
 
-        CartPage cartPage = itemPage
+        CartPromoPage cartPromoPage = itemPromoPage
                 .addToCart()
                 .openCart();
-        cartPage.enterText(search).submit();
+        cartPromoPage.enterText(search).submit();
 
-        String actualResult = cartPage.getResult();
+        String actualResult = cartPromoPage.getResult();
 
         Assertions.assertEquals(expectedResult, actualResult, String.format("Expected:%s,but actual:%s", expectedResult, actualResult));
     }

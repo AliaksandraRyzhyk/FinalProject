@@ -5,7 +5,7 @@ import com.codeborne.selenide.Configuration;
 import config.UserConfig;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import ui.auth.MainPage;
+import ui.auth.AuthPage;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.page;
 
@@ -20,9 +20,9 @@ public class AuthTest {
     public void testAuth() {
         open("https://fizcult.by/");
 
-        MainPage mainPage = page(MainPage.class);
+        AuthPage authPage = page(AuthPage.class);
 
-        SingInPage singInPage = mainPage
+        SingInPage singInPage = authPage
                 .clickButton()
                 .clickLoginButton();
 

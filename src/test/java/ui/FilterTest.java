@@ -1,9 +1,9 @@
 package ui;
 
 import com.codeborne.selenide.Configuration;
-import ui.filter.ItemPage;
+import ui.filter.ItemFilterPage;
 import org.junit.jupiter.api.Assertions;
-import ui.filter.MainPage;
+import ui.filter.MainFilterPage;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -18,18 +18,18 @@ public class FilterTest {
     }
 
     @ParameterizedTest
-    @CsvSource("Найдено 18 товаров")
+    @CsvSource("Найдено 7 товаров")
     public void testFilterItem(String expectedResult) {
         open("https://fizcult.by/");
 
-        MainPage mainPage = page(MainPage.class);
+        MainFilterPage mainFilterPage = page(MainFilterPage.class);
 
-        ItemPage itemPage = mainPage
+        ItemFilterPage itemFilterPage = mainFilterPage
                 .clickButton()
                 .checkBrandButton();
-        itemPage.clickProteinButton();
+        itemFilterPage.clickProteinButton();
 
-        String actualResult = "Найдено " + itemPage.getNumber() + " товаров";
+        String actualResult = "Найдено " + itemFilterPage.getNumber() + " товаров";
 
         Assertions.assertEquals(actualResult, expectedResult, String.format("Expected:%s,but actual:%s", expectedResult, actualResult));
     }

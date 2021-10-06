@@ -20,7 +20,7 @@ public class SubscribeEmailTest {
         params.put("api_key", UserConfig.getApiKey());
         params.put("list_ids", response);
         params.put("fields[email]", UserConfig.getUserName());
-        params.put("double_optin", UserConfig.getDoubleOptin());
+        params.put("double_optin", UserConfig.getDoubleOption());
 
         RestAssured.baseURI = UserConfig.getBaseURI();
         RestAssured.basePath = "/ui/subscribe";

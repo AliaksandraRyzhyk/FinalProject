@@ -3,8 +3,8 @@ package config;
 import org.apache.commons.lang3.RandomStringUtils;
 
 public class UserConfig {
-    public static final String USER_NAME = "Aliaksandra";
-    public static final String USER_LOGIN = "Demo@list.ru";
+    public static final String USER_NAME = "Alexandra";
+    public static final String USER_LOGIN = "test@list.ru";
     public static final String USER_PASSWORD = "Password!1";
     public static final String USER_CONFIRM_PASSWORD = "Password!1";
 
@@ -51,7 +51,7 @@ public class UserConfig {
         return ("<p>Вам полагается скидка 10%</p>");
     }
 
-    public static String getDoubleOptin() {
+    public static String getDoubleOption() {
         return "3";
     }
 

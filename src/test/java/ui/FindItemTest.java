@@ -1,8 +1,8 @@
 package ui;
 
 import com.codeborne.selenide.Configuration;
-import ui.findItem.ItemPage;
-import ui.findItem.MainPage;
+import ui.findItem.ItemFindPage;
+import ui.findItem.MainFindPage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -18,18 +18,19 @@ public class FindItemTest {
     }
 
     @ParameterizedTest
-    @CsvSource({"УГЛЕВОДНАЯ СМЕСЬ CARBONOX,'УГЛЕВОДНАЯ СМЕСЬ CARBONOX, OLIMP', '89.90 РУБ.'"})
+    @CsvSource({"УГЛЕВОДНАЯ СМЕСЬ DEXTREX JUICE,'УГЛЕВОДНАЯ СМЕСЬ DEXTREX JUICE, OLIMP', '20.80 РУБ.'"})
     public void testFindItem(String searchContent, String expectedName, String expectedPrice) {
         open("https://fizcult.by/");
 
-        MainPage mainPage = page(MainPage.class);
+        MainFindPage mainFindPage = page(MainFindPage.class);
 
-        ItemPage itemPage = mainPage
+        ItemFindPage itemFindPage = mainFindPage
                 .enterText(searchContent)
-                .selectItem("CARBONOX");
+                .clickButtonSearch()
+                .selectItem("DEXTREX JUICE");
 
-        String actualName = itemPage.getItemName();
-        String actualPrice = itemPage.getItemPrice();
+        String actualName = itemFindPage.getItemName();
+        String actualPrice = itemFindPage.getItemPrice();
 
         Assertions.assertEquals(expectedName, actualName, String.format("Expected:%s,but actual:%s", expectedName, actualName));
         Assertions.assertEquals(expectedPrice, actualPrice, String.format("Expected:%s,but actual:%s", expectedPrice, actualPrice));
