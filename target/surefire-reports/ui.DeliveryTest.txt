@@ -1,4 +1,25 @@
 -------------------------------------------------------------------------------
 Test set: ui.DeliveryTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.509 s - in ui.DeliveryTest
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 11.059 s <<< FAILURE! - in ui.DeliveryTest
+ui.DeliveryTest.testDeliveryItem  Time elapsed: 11.047 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {By.xpath: //label[@for='address_15048']}
+Expected: visible or transparent: visible or have css value opacity=0
+Screenshot: file:/E:/IT%20academy/Финальный%20проект/FinalProject/build/reports/tests/1633614441770.0.png
+Page source: file:/E:/IT%20academy/Финальный%20проект/FinalProject/build/reports/tests/1633614441770.0.html
+Timeout: 4 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[@for='address_15048']"}
+	at ui.DeliveryTest.testDeliveryItem(DeliveryTest.java:40)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//label[@for='address_15048']"}
+  (Session info: chrome=94.0.4606.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WIN-2HOT7N0FG3K', ip: '192.168.100.184', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59770}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 56eac61f117c305cbf8b6ea3f9646d64
+*** Element info: {Using=xpath, value=//label[@for='address_15048']}
+	at ui.DeliveryTest.testDeliveryItem(DeliveryTest.java:40)
+

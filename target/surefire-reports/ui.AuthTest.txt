@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ui.AuthTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.463 s - in ui.AuthTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.301 s - in ui.AuthTest

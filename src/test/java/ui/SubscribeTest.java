@@ -16,7 +16,7 @@ public class SubscribeTest {
     }
 
     @ParameterizedTest
-    @CsvSource({"airyzhiks@list.ru,'Спасибо!'"})
+    @CsvSource({"ryzhyyksi@list.ru,'Спасибо!'"})
     public void testSubscribe(String text, String expectedMessage) {
         open("https://fizcult.by/");
 

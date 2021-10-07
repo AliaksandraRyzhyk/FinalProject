@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.page;
 public class MainPromoPage {
     private final SelenideElement goal = $x("(//a[@class='nav__link'])[3]");
     private final SelenideElement treatment = $x("//a[text()='Лечение судорог']");
-    private final SelenideElement item = $x("//img[@class='product__img']");
+    private final SelenideElement item = $x("(//img[@class='product__img'])[2]");
 
     private static Logger logger = Logger.getLogger(MainPromoPage.class);
 
