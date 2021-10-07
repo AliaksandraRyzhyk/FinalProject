@@ -4,6 +4,7 @@ import config.UserConfig;
 import io.cucumber.java.en.Then;
 import io.restassured.RestAssured;
 import org.apache.http.HttpStatus;
+import org.junit.jupiter.api.Assertions;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,7 +14,7 @@ import static io.restassured.RestAssured.given;
 public class CreateListTest {
 
     @Then("Create a new contact list")
-    public void createNewContact() {
+    public void testCreateNewContact() {
         Map<String, String> params = new HashMap<>();
 
         params.put("format", UserConfig.getFormat());
@@ -23,7 +24,7 @@ public class CreateListTest {
         RestAssured.baseURI = UserConfig.getBaseURI();
         RestAssured.basePath = "/createList";
 
-        given()
+        String responseId = given()
                 .contentType("application/json")
                 .queryParams(params)
                 .when()
@@ -32,7 +33,14 @@ public class CreateListTest {
                 .log()
                 .all()
                 .assertThat()
-                .statusCode(HttpStatus.SC_OK);
+                .statusCode(HttpStatus.SC_OK)
+                .extract()
+                .jsonPath()
+                .getString("result.id");
+
+        System.out.println("New client id: " + responseId);
+
+        Assertions.assertNotNull(responseId);
     }
 }
 

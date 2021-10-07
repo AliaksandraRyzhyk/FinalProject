@@ -16,27 +16,27 @@ public class ItemFindPage {
 
     @Step("Зафиксировать наименование товара")
     public String getItemName() {
-        logger.info("ItemName has been received");
+        logger.debug("ItemName has been received");
         return itemName.text();
     }
 
     @Step("Зафиксировать стоимость товара")
     public String getItemPrice() {
-        logger.info("ItemPrice has been received");
+        logger.debug("ItemPrice has been received");
         return itemPrice.text();
     }
 
     @Step("Нажать на кнопку В корзину")
     public ItemFindPage addToCart() {
         addToCart.scrollIntoView(false).click();
-        logger.info("Button 'В корзину' has been inputted");
+        logger.debug("Button 'В корзину' has been inputted");
         return this;
     }
 
     @Step("Перейти в корзину товаров")
     public CartFindPage openCart() {
         cart.scrollIntoView(false).click();
-        logger.info("Cart button has been clicked");
+        logger.debug("Cart button has been clicked");
         return page(CartFindPage.class);
     }
 }

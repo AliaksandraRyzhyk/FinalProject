@@ -30,7 +30,7 @@ public class ItemDeliveryPage {
     @Step("Открыть корзину товаров")
     public CartDeliveryPage openCart() {
         cart.scrollIntoView(false).click();
-        logger.debug("Cart button  has been clicked");
+        logger.debug("Cart button has been clicked");
         return page(CartDeliveryPage.class);
     }
 }

@@ -13,12 +13,6 @@ public class CartPromoPage {
 
     private static Logger logger = Logger.getLogger(CartPromoPage.class);
 
-    @Step("Зафиксировать полученный результат")
-    public String getResult() {
-        logger.info("Result has been received");
-        return result.text();
-    }
-
     @Step("Ввести {0} в строку введения промода")
     public CartPromoPage enterText(String text) {
         inputPromo.scrollIntoView(false).setValue(text);
@@ -33,4 +27,9 @@ public class CartPromoPage {
         return this;
     }
 
+    @Step("Зафиксировать полученный результат")
+    public String getResult() {
+        logger.debug("Result has been received");
+        return result.text();
+    }
 }

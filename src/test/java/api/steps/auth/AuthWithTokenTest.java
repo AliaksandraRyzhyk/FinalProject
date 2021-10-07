@@ -3,16 +3,14 @@ package api.steps.auth;
 import config.UserConfig;
 import io.cucumber.java.en.Then;
 import io.restassured.RestAssured;
-
 import java.util.HashMap;
 import java.util.Map;
-
 import static io.restassured.RestAssured.given;
 
 public class AuthWithTokenTest {
 
     @Then("Input login and password")
-    public void testToken() {
+    public void testAuthToken() {
         Map<String, String> params = new HashMap<>();
 
         params.put("login", "ryzhyk.aliaksandra@yandex.by");
@@ -38,5 +36,4 @@ public class AuthWithTokenTest {
 
         System.out.println("Token: " + tokenResponse);
     }
-
 }

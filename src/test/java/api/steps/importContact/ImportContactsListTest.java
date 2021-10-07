@@ -11,8 +11,9 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 
 public class ImportContactsListTest {
+
     @Then("Get the final contact list")
-    public void getEmailList() {
+    public void testGetEmailList() {
         Map<String, String> params = new HashMap<>();
 
         params.put("format", UserConfig.getFormat());

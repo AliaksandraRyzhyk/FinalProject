@@ -14,7 +14,7 @@ public class GetEmailList {
     private static String response;
 
     @Then("Get email address list")
-    public void getListOfEmail() {
+    public void testGetListOfEmail() {
         Map<String, String> params = new HashMap<>();
 
         params.put("format", UserConfig.getFormat());
@@ -33,7 +33,9 @@ public class GetEmailList {
                 .all()
                 .assertThat()
                 .statusCode(HttpStatus.SC_OK)
-                .extract().jsonPath().getString("result.id[0]"));
+                .extract()
+                .jsonPath()
+                .getString("result.id[0]"));
     }
 
     public static String getResponse() {

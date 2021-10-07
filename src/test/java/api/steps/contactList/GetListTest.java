@@ -6,13 +6,14 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.junit.jupiter.api.Assertions;
-import static io.restassured.RestAssured.given;
 import java.util.HashMap;
 import java.util.Map;
+import static io.restassured.RestAssured.given;
 
 public class GetListTest {
+
     @Then("Get a final list of all available contacts")
-    public void getContactList() {
+    public void testGetContactList() {
         Map<String, String> params = new HashMap<>();
 
         params.put("format", UserConfig.getFormat());

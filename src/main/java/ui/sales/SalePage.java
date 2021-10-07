@@ -63,7 +63,7 @@ public class SalePage {
     @Step("Проверить видимость сообщения о некорректно внесенных данных")
     public Boolean messageIsNotVisible() {
         message.shouldNotBe(Condition.visible);
-        logger.info("Sale message hasn't been visible");
+        logger.debug("Sale message hasn't been visible");
         return true;
     }
 }

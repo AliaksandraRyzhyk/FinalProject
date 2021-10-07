@@ -4,10 +4,8 @@ import config.UserConfig;
 import io.cucumber.java.en.Then;
 import io.restassured.RestAssured;
 import org.apache.http.HttpStatus;
-
 import java.util.HashMap;
 import java.util.Map;
-
 import static io.restassured.RestAssured.given;
 
 public class CreateEmailTemplate {

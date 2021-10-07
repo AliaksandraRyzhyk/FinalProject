@@ -55,7 +55,7 @@ public class SingInPage {
     @Step("Проверка видимости сообщения об успешной авторизации")
     public Boolean messageIsVisible() {
         authMessage.shouldBe(Condition.visible);
-        logger.info("Auth message has been visible");
+        logger.debug("Auth message has been visible");
         return true;
     }
 }

@@ -11,8 +11,9 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 
 public class ExcludeEmailTest {
+
     @Then("Exclude e-mail address of a contact from one list")
-    public void excludeEmail() {
+    public void testExcludeEmail() {
         Map<String, String> params = new HashMap<>();
 
         params.put("format", UserConfig.getFormat());

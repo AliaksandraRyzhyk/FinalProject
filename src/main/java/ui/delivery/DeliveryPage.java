@@ -4,6 +4,7 @@ import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.apache.log4j.Logger;
+
 import static com.codeborne.selenide.Selenide.$x;
 
 public class DeliveryPage {
@@ -60,7 +61,7 @@ public class DeliveryPage {
     @Step("Проверить видимость сообщения о некорректно внесенных данных")
     public Boolean messageIsVisible() {
         message.shouldBe(Condition.visible);
-        logger.info("Auth message has been visible");
+        logger.debug("Auth message has been visible");
         return true;
     }
 }

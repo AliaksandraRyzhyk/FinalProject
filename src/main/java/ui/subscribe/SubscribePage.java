@@ -16,7 +16,7 @@ public class SubscribePage {
 
     @Step("Зафиксировать полученное сообщение")
     public String getSubscribeMessage() {
-        logger.info("Subscribe message has been received");
+        logger.debug("Subscribe message has been received");
         return subscribeMessage.text();
     }
 
@@ -37,6 +37,7 @@ public class SubscribePage {
     @Step("Проверить видимость сообщения об успешности оформления подписки")
     public SubscribePage messageIsVisible() {
         subscribeMessage.shouldBe(Condition.visible);
+        logger.debug("Message has been visible");
         return this;
     }
 }

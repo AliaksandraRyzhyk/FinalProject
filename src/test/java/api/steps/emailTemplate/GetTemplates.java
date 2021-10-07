@@ -11,6 +11,7 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 
 public class GetTemplates {
+
     @Then("Get a list of all templates created both through the UniSender personal account and through the API")
     public void getEmailTemplate() {
         Map<String, String> params = new HashMap<>();
@@ -31,6 +32,5 @@ public class GetTemplates {
                 .all()
                 .assertThat()
                 .statusCode(HttpStatus.SC_OK);
-
     }
 }

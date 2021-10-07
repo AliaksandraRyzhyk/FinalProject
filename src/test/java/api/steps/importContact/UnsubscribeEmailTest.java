@@ -10,8 +10,9 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 
 public class UnsubscribeEmailTest {
+
     @Then("Unsubscribe e-mail address of a contact from one list \\(tag unsubscribed)")
-    public void unsubscribeEmail() {
+    public void testUnsubscribeEmail() {
         Map<String, String> params = new HashMap<>();
 
         params.put("format", UserConfig.getFormat());

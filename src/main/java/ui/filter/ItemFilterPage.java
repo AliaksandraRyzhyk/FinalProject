@@ -21,7 +21,7 @@ public class ItemFilterPage {
 
     @Step("Определить количество найденных товаров")
     public String getNumber() {
-        logger.info("Number of items has been determined by filtration");
+        logger.debug("Number of items has been determined by filtration");
         return number.text();
     }
 }

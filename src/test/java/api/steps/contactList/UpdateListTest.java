@@ -9,8 +9,9 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 
 public class UpdateListTest {
+
     @Then("Update our contact list")
-    public void updateContactList() {
+    public void testUpdateContactList() {
         Map<String, String> params = new HashMap<>();
 
         params.put("format", UserConfig.getFormat());
