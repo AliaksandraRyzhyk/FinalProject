@@ -1,916 +1,366 @@
-2021-10-07 16:47:07 DEBUG AuthPage:19 - Auth button has been clicked
-2021-10-07 16:47:08 DEBUG AuthPage:26 - Button 'Auth' has been clicked
-2021-10-07 16:47:09 DEBUG SingInPage:23 - Name: Alexandra has been inputted
-2021-10-07 16:47:09 DEBUG SingInPage:30 - Login: test@list.ru has been inputted
-2021-10-07 16:47:09 DEBUG SingInPage:37 - Password: Password!1 has been inputted
-2021-10-07 16:47:09 DEBUG SingInPage:44 - ConfirmPassword: Password!1 has been inputted
-2021-10-07 16:47:10 DEBUG SingInPage:51 - Button 'Submit' has been clicked
-2021-10-07 16:47:10 DEBUG SingInPage:58 - Auth message has been visible
-2021-10-07 16:47:12 DEBUG MainDeliveryPage:19 - Button 'Каталог' has been selected
-2021-10-07 16:47:14 DEBUG MainDeliveryPage:26 - Link 'Изотоники' has been clicked
-2021-10-07 16:47:14 DEBUG MainDeliveryPage:33 - Item has been clicked in catalog 'Изотоники'
-2021-10-07 16:47:15 DEBUG ItemDeliveryPage:19 - Number of items  has been increased
-2021-10-07 16:47:15 DEBUG ItemDeliveryPage:26 - Button 'В корзину'  has been clicked
-2021-10-07 16:47:17 DEBUG ItemDeliveryPage:33 - Cart button has been clicked
-2021-10-07 16:47:17 DEBUG CartDeliveryPage:17 - Button 'Оформить заказ' has been inputted
-2021-10-07 16:47:47 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://apig.unisender.com:443
-2021-10-07 16:47:47 DEBUG DefaultClientConnectionOperator:177 - Connecting to apig.unisender.com:443
-2021-10-07 16:47:48 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2021-10-07 16:47:48 DEBUG RequestAuthCache:77 - Auth cache not set in the context
-2021-10-07 16:47:48 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2021-10-07 16:47:48 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2021-10-07 16:47:48 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
-2021-10-07 16:47:48 DEBUG DefaultClientConnection:274 - Sending request: POST /auth/token HTTP/1.1
-2021-10-07 16:47:48 DEBUG wire:73 -  >> "POST /auth/token HTTP/1.1[\r][\n]"
-2021-10-07 16:47:48 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
-2021-10-07 16:47:48 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2021-10-07 16:47:48 DEBUG wire:73 -  >> "Content-Length: 64[\r][\n]"
-2021-10-07 16:47:48 DEBUG wire:73 -  >> "Host: apig.unisender.com[\r][\n]"
-2021-10-07 16:47:48 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2021-10-07 16:47:48 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
-2021-10-07 16:47:48 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2021-10-07 16:47:48 DEBUG wire:73 -  >> "[\r][\n]"
-2021-10-07 16:47:48 DEBUG headers:278 - >> POST /auth/token HTTP/1.1
-2021-10-07 16:47:48 DEBUG headers:281 - >> Accept: */*
-2021-10-07 16:47:48 DEBUG headers:281 - >> Content-Type: application/json
-2021-10-07 16:47:48 DEBUG headers:281 - >> Content-Length: 64
-2021-10-07 16:47:48 DEBUG headers:281 - >> Host: apig.unisender.com
-2021-10-07 16:47:48 DEBUG headers:281 - >> Connection: Keep-Alive
-2021-10-07 16:47:48 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2021-10-07 16:47:48 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
-2021-10-07 16:47:48 DEBUG wire:87 -  >> "{"password":"Password!1","login":"ryzhyk.aliaksandra@yandex.by"}"
-2021-10-07 16:47:48 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2021-10-07 16:47:48 DEBUG wire:73 -  << "server: nginx[\r][\n]"
-2021-10-07 16:47:48 DEBUG wire:73 -  << "date: Thu, 07 Oct 2021 13:47:48 GMT[\r][\n]"
-2021-10-07 16:47:48 DEBUG wire:73 -  << "content-type: application/json[\r][\n]"
-2021-10-07 16:47:48 DEBUG wire:73 -  << "content-length: 78[\r][\n]"
-2021-10-07 16:47:48 DEBUG wire:73 -  << "cache-control: no-cache, private[\r][\n]"
-2021-10-07 16:47:48 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
-2021-10-07 16:47:48 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
-2021-10-07 16:47:48 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:48 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2021-10-07 16:47:48 DEBUG headers:262 - << HTTP/1.1 200 OK
-2021-10-07 16:47:48 DEBUG headers:265 - << server: nginx
-2021-10-07 16:47:48 DEBUG headers:265 - << date: Thu, 07 Oct 2021 13:47:48 GMT
-2021-10-07 16:47:48 DEBUG headers:265 - << content-type: application/json
-2021-10-07 16:47:48 DEBUG headers:265 - << content-length: 78
-2021-10-07 16:47:48 DEBUG headers:265 - << cache-control: no-cache, private
-2021-10-07 16:47:48 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
-2021-10-07 16:47:48 DEBUG headers:265 - << x-powered-by: Unisender
-2021-10-07 16:47:48 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2021-10-07 16:47:48 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json
-2021-10-07 16:47:48 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2021-10-07 16:47:48 DEBUG wire:87 -  << "{"success":true,"result":{"token":"b685d03c367d9ca50f31d214508d6bc5e76e0379"}}"
-2021-10-07 16:47:48 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@60c2c500
-2021-10-07 16:47:48 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2021-10-07 16:47:49 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:57663<->195.13.237.88:443 closed
-2021-10-07 16:47:49 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.unisender.com:443
-2021-10-07 16:47:49 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.unisender.com:443
-2021-10-07 16:47:49 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2021-10-07 16:47:49 DEBUG RequestAuthCache:77 - Auth cache not set in the context
-2021-10-07 16:47:49 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2021-10-07 16:47:49 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2021-10-07 16:47:49 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
-2021-10-07 16:47:49 DEBUG DefaultClientConnection:274 - Sending request: POST /ru/api/createList?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json&title=IcqLXcaKRC HTTP/1.1
-2021-10-07 16:47:49 DEBUG wire:73 -  >> "POST /ru/api/createList?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json&title=IcqLXcaKRC HTTP/1.1[\r][\n]"
-2021-10-07 16:47:49 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2021-10-07 16:47:49 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
-2021-10-07 16:47:49 DEBUG wire:73 -  >> "Content-Length: 0[\r][\n]"
-2021-10-07 16:47:49 DEBUG wire:73 -  >> "Host: api.unisender.com[\r][\n]"
-2021-10-07 16:47:49 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2021-10-07 16:47:49 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
-2021-10-07 16:47:49 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2021-10-07 16:47:49 DEBUG wire:73 -  >> "[\r][\n]"
-2021-10-07 16:47:49 DEBUG headers:278 - >> POST /ru/api/createList?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json&title=IcqLXcaKRC HTTP/1.1
-2021-10-07 16:47:49 DEBUG headers:281 - >> Content-Type: application/json
-2021-10-07 16:47:49 DEBUG headers:281 - >> Accept: */*
-2021-10-07 16:47:49 DEBUG headers:281 - >> Content-Length: 0
-2021-10-07 16:47:49 DEBUG headers:281 - >> Host: api.unisender.com
-2021-10-07 16:47:49 DEBUG headers:281 - >> Connection: Keep-Alive
-2021-10-07 16:47:49 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2021-10-07 16:47:49 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
-2021-10-07 16:47:50 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "server: nginx[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "date: Thu, 07 Oct 2021 13:47:50 GMT[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "content-type: application/json; charset=utf-8[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "transfer-encoding: chunked[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "set-cookie: US_SESSID=21c5b9701fea5ae49551199c2c093e08; path=/; secure; HttpOnly; SameSite=lax[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "expires: Thu, 07 Oct 2021 13:47:50 GMT[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "last-modified: Thu, 07 Oct 2021 13:47:50 GMT[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "pragma: no-cache[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "x-username: ryzhik.sasha@list.ru[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "x-userid: 4594492[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "x-session-id: 21c5b9701fea5ae49551199c2c093e08[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "cache-control: max-age=0, must-revalidate, private[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "content-encoding: gzip[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:50 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2021-10-07 16:47:50 DEBUG headers:262 - << HTTP/1.1 200 OK
-2021-10-07 16:47:50 DEBUG headers:265 - << server: nginx
-2021-10-07 16:47:50 DEBUG headers:265 - << date: Thu, 07 Oct 2021 13:47:50 GMT
-2021-10-07 16:47:50 DEBUG headers:265 - << content-type: application/json; charset=utf-8
-2021-10-07 16:47:50 DEBUG headers:265 - << transfer-encoding: chunked
-2021-10-07 16:47:50 DEBUG headers:265 - << set-cookie: US_SESSID=21c5b9701fea5ae49551199c2c093e08; path=/; secure; HttpOnly; SameSite=lax
-2021-10-07 16:47:50 DEBUG headers:265 - << expires: Thu, 07 Oct 2021 13:47:50 GMT
-2021-10-07 16:47:50 DEBUG headers:265 - << last-modified: Thu, 07 Oct 2021 13:47:50 GMT
-2021-10-07 16:47:50 DEBUG headers:265 - << pragma: no-cache
-2021-10-07 16:47:50 DEBUG headers:265 - << x-username: ryzhik.sasha@list.ru
-2021-10-07 16:47:50 DEBUG headers:265 - << x-userid: 4594492
-2021-10-07 16:47:50 DEBUG headers:265 - << x-session-id: 21c5b9701fea5ae49551199c2c093e08
-2021-10-07 16:47:50 DEBUG headers:265 - << cache-control: max-age=0, must-revalidate, private
-2021-10-07 16:47:50 DEBUG headers:265 - << content-encoding: gzip
-2021-10-07 16:47:50 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
-2021-10-07 16:47:50 DEBUG headers:265 - << x-powered-by: Unisender
-2021-10-07 16:47:50 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2021-10-07 16:47:50 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
-2021-10-07 16:47:50 DEBUG wire:73 -  << "28[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab]V*J-.[0xcd])Q[0xb2][0xaa]V[0xca]LQ[0xb2]23[0xaa][0xad][0x5][0x0][0xcb][0xcd][0xf1]?[0x14][0x0][0x0][0x0]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "0[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:50 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2021-10-07 16:47:50 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@43462cef
-2021-10-07 16:47:50 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2021-10-07 16:47:50 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.unisender.com:443
-2021-10-07 16:47:50 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.unisender.com:443
-2021-10-07 16:47:50 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2021-10-07 16:47:50 DEBUG RequestAuthCache:77 - Auth cache not set in the context
-2021-10-07 16:47:50 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2021-10-07 16:47:50 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2021-10-07 16:47:50 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
-2021-10-07 16:47:50 DEBUG DefaultClientConnection:274 - Sending request: POST /ru/api/updateList?list_id=0&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json&title=lsSzwrdRrB HTTP/1.1
-2021-10-07 16:47:50 DEBUG wire:73 -  >> "POST /ru/api/updateList?list_id=0&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json&title=lsSzwrdRrB HTTP/1.1[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  >> "Content-Length: 0[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  >> "Host: api.unisender.com[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  >> "[\r][\n]"
-2021-10-07 16:47:50 DEBUG headers:278 - >> POST /ru/api/updateList?list_id=0&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json&title=lsSzwrdRrB HTTP/1.1
-2021-10-07 16:47:50 DEBUG headers:281 - >> Content-Type: application/json
-2021-10-07 16:47:50 DEBUG headers:281 - >> Accept: */*
-2021-10-07 16:47:50 DEBUG headers:281 - >> Content-Length: 0
-2021-10-07 16:47:50 DEBUG headers:281 - >> Host: api.unisender.com
-2021-10-07 16:47:50 DEBUG headers:281 - >> Connection: Keep-Alive
-2021-10-07 16:47:50 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2021-10-07 16:47:50 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
-2021-10-07 16:47:50 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "server: nginx[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "date: Thu, 07 Oct 2021 13:47:51 GMT[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "content-type: application/json; charset=utf-8[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "transfer-encoding: chunked[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "set-cookie: US_SESSID=ee02048e3b74748f0c88f8dabd33869d; path=/; secure; HttpOnly; SameSite=lax[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "expires: Thu, 07 Oct 2021 13:47:51 GMT[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "last-modified: Thu, 07 Oct 2021 13:47:51 GMT[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "pragma: no-cache[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "x-username: ryzhik.sasha@list.ru[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "x-userid: 4594492[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "x-session-id: ee02048e3b74748f0c88f8dabd33869d[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "cache-control: max-age=0, must-revalidate, private[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "content-encoding: gzip[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:50 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2021-10-07 16:47:50 DEBUG headers:262 - << HTTP/1.1 200 OK
-2021-10-07 16:47:50 DEBUG headers:265 - << server: nginx
-2021-10-07 16:47:50 DEBUG headers:265 - << date: Thu, 07 Oct 2021 13:47:51 GMT
-2021-10-07 16:47:50 DEBUG headers:265 - << content-type: application/json; charset=utf-8
-2021-10-07 16:47:50 DEBUG headers:265 - << transfer-encoding: chunked
-2021-10-07 16:47:50 DEBUG headers:265 - << set-cookie: US_SESSID=ee02048e3b74748f0c88f8dabd33869d; path=/; secure; HttpOnly; SameSite=lax
-2021-10-07 16:47:50 DEBUG headers:265 - << expires: Thu, 07 Oct 2021 13:47:51 GMT
-2021-10-07 16:47:50 DEBUG headers:265 - << last-modified: Thu, 07 Oct 2021 13:47:51 GMT
-2021-10-07 16:47:50 DEBUG headers:265 - << pragma: no-cache
-2021-10-07 16:47:50 DEBUG headers:265 - << x-username: ryzhik.sasha@list.ru
-2021-10-07 16:47:50 DEBUG headers:265 - << x-userid: 4594492
-2021-10-07 16:47:50 DEBUG headers:265 - << x-session-id: ee02048e3b74748f0c88f8dabd33869d
-2021-10-07 16:47:50 DEBUG headers:265 - << cache-control: max-age=0, must-revalidate, private
-2021-10-07 16:47:50 DEBUG headers:265 - << content-encoding: gzip
-2021-10-07 16:47:50 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
-2021-10-07 16:47:50 DEBUG headers:265 - << x-powered-by: Unisender
-2021-10-07 16:47:50 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2021-10-07 16:47:50 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
-2021-10-07 16:47:50 DEBUG wire:73 -  << "8C[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x15][0xcd][0xbd][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "[0xc2]0[0x10][0x0][0xe0]W9[0xb2]t1[0xa5][0xf9][0xd1]4[0xdd][0xa2]I[0xc1]]\DJ1[0xa7][0x1e][0x4][0x8b]Wu[0x11][0xdf]][0x9d][0xbe][0xf1]{[0xb]d[0x9e]Xt"[0xfd][0x85]m[0xec]tP[0xc9]zc[0xa5]vn)[0x95]J[0x1b][0x19][0xcc][0xba][0x97][0xab][0xe0][0x8d][0xb2]Q[0xf5][0xc6][0xb6]5[0xc4][0xbd]r[0x8d][0xd7][0xad]l4[0x1c]vW[0x84]3a[0xc9]P[0x15][0x9a][0x1f][0x3][0xe5][\n]"
-2021-10-07 16:47:50 DEBUG wire:87 -  << "h[0x6][0xc6][0xfb][0x93][0x18]s}[0x14][0xb]q[0x9a]2[0xfe][0x1a][0xba][0xbd][0xc6]By[0x18][0xf9]">_[0xe1][0x17];[0xc5]~[0x0][0x0][0x0]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "0[\r][\n]"
-2021-10-07 16:47:50 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:50 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2021-10-07 16:47:50 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@32f3174d
-2021-10-07 16:47:50 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2021-10-07 16:47:50 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.unisender.com:443
-2021-10-07 16:47:50 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.unisender.com:443
-2021-10-07 16:47:51 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2021-10-07 16:47:51 DEBUG RequestAuthCache:77 - Auth cache not set in the context
-2021-10-07 16:47:51 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2021-10-07 16:47:51 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2021-10-07 16:47:51 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
-2021-10-07 16:47:51 DEBUG DefaultClientConnection:274 - Sending request: POST /ru/api/deleteList?list_id=4&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json HTTP/1.1
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "POST /ru/api/deleteList?list_id=4&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json HTTP/1.1[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Content-Length: 0[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Host: api.unisender.com[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "[\r][\n]"
-2021-10-07 16:47:51 DEBUG headers:278 - >> POST /ru/api/deleteList?list_id=4&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json HTTP/1.1
-2021-10-07 16:47:51 DEBUG headers:281 - >> Content-Type: application/json
-2021-10-07 16:47:51 DEBUG headers:281 - >> Accept: */*
-2021-10-07 16:47:51 DEBUG headers:281 - >> Content-Length: 0
-2021-10-07 16:47:51 DEBUG headers:281 - >> Host: api.unisender.com
-2021-10-07 16:47:51 DEBUG headers:281 - >> Connection: Keep-Alive
-2021-10-07 16:47:51 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2021-10-07 16:47:51 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
-2021-10-07 16:47:51 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "server: nginx[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "date: Thu, 07 Oct 2021 13:47:51 GMT[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "content-type: application/json; charset=utf-8[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "transfer-encoding: chunked[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "set-cookie: US_SESSID=b52c6a7b34c0e2e3d64ef530ba5cb434; path=/; secure; HttpOnly; SameSite=lax[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "expires: Thu, 07 Oct 2021 13:47:51 GMT[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "last-modified: Thu, 07 Oct 2021 13:47:51 GMT[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "pragma: no-cache[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "x-username: ryzhik.sasha@list.ru[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "x-userid: 4594492[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "x-session-id: b52c6a7b34c0e2e3d64ef530ba5cb434[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "cache-control: max-age=0, must-revalidate, private[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "content-encoding: gzip[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:51 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2021-10-07 16:47:51 DEBUG headers:262 - << HTTP/1.1 200 OK
-2021-10-07 16:47:51 DEBUG headers:265 - << server: nginx
-2021-10-07 16:47:51 DEBUG headers:265 - << date: Thu, 07 Oct 2021 13:47:51 GMT
-2021-10-07 16:47:51 DEBUG headers:265 - << content-type: application/json; charset=utf-8
-2021-10-07 16:47:51 DEBUG headers:265 - << transfer-encoding: chunked
-2021-10-07 16:47:51 DEBUG headers:265 - << set-cookie: US_SESSID=b52c6a7b34c0e2e3d64ef530ba5cb434; path=/; secure; HttpOnly; SameSite=lax
-2021-10-07 16:47:51 DEBUG headers:265 - << expires: Thu, 07 Oct 2021 13:47:51 GMT
-2021-10-07 16:47:51 DEBUG headers:265 - << last-modified: Thu, 07 Oct 2021 13:47:51 GMT
-2021-10-07 16:47:51 DEBUG headers:265 - << pragma: no-cache
-2021-10-07 16:47:51 DEBUG headers:265 - << x-username: ryzhik.sasha@list.ru
-2021-10-07 16:47:51 DEBUG headers:265 - << x-userid: 4594492
-2021-10-07 16:47:51 DEBUG headers:265 - << x-session-id: b52c6a7b34c0e2e3d64ef530ba5cb434
-2021-10-07 16:47:51 DEBUG headers:265 - << cache-control: max-age=0, must-revalidate, private
-2021-10-07 16:47:51 DEBUG headers:265 - << content-encoding: gzip
-2021-10-07 16:47:51 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
-2021-10-07 16:47:51 DEBUG headers:265 - << x-powered-by: Unisender
-2021-10-07 16:47:51 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2021-10-07 16:47:51 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
-2021-10-07 16:47:51 DEBUG wire:73 -  << "21[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab]V*J-.[0xcd])Q[0xb2][0xaa][0xae][0xad][0x5][0x0]L[0x4][0xee][0xe][\r][0x0][0x0][0x0]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "0[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:51 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2021-10-07 16:47:51 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@32a2da8c
-2021-10-07 16:47:51 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2021-10-07 16:47:51 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.unisender.com:443
-2021-10-07 16:47:51 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.unisender.com:443
-2021-10-07 16:47:51 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2021-10-07 16:47:51 DEBUG RequestAuthCache:77 - Auth cache not set in the context
-2021-10-07 16:47:51 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2021-10-07 16:47:51 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2021-10-07 16:47:51 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
-2021-10-07 16:47:51 DEBUG DefaultClientConnection:274 - Sending request: GET /ru/api/getLists?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json HTTP/1.1
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "GET /ru/api/getLists?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json HTTP/1.1[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Host: api.unisender.com[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "[\r][\n]"
-2021-10-07 16:47:51 DEBUG headers:278 - >> GET /ru/api/getLists?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json HTTP/1.1
-2021-10-07 16:47:51 DEBUG headers:281 - >> Content-Type: application/json
-2021-10-07 16:47:51 DEBUG headers:281 - >> Accept: */*
-2021-10-07 16:47:51 DEBUG headers:281 - >> Host: api.unisender.com
-2021-10-07 16:47:51 DEBUG headers:281 - >> Connection: Keep-Alive
-2021-10-07 16:47:51 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2021-10-07 16:47:51 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
-2021-10-07 16:47:51 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "server: nginx[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "date: Thu, 07 Oct 2021 13:47:51 GMT[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "content-type: application/json; charset=utf-8[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "transfer-encoding: chunked[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "set-cookie: US_SESSID=9a96aef00bdf0d5b066b61385c86b71d; path=/; secure; HttpOnly; SameSite=lax[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "expires: Thu, 07 Oct 2021 13:47:51 GMT[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "last-modified: Thu, 07 Oct 2021 13:47:51 GMT[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "pragma: no-cache[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "x-username: ryzhik.sasha@list.ru[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "x-userid: 4594492[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "x-session-id: 9a96aef00bdf0d5b066b61385c86b71d[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "cache-control: max-age=0, must-revalidate, private[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "content-encoding: gzip[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:51 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2021-10-07 16:47:51 DEBUG headers:262 - << HTTP/1.1 200 OK
-2021-10-07 16:47:51 DEBUG headers:265 - << server: nginx
-2021-10-07 16:47:51 DEBUG headers:265 - << date: Thu, 07 Oct 2021 13:47:51 GMT
-2021-10-07 16:47:51 DEBUG headers:265 - << content-type: application/json; charset=utf-8
-2021-10-07 16:47:51 DEBUG headers:265 - << transfer-encoding: chunked
-2021-10-07 16:47:51 DEBUG headers:265 - << set-cookie: US_SESSID=9a96aef00bdf0d5b066b61385c86b71d; path=/; secure; HttpOnly; SameSite=lax
-2021-10-07 16:47:51 DEBUG headers:265 - << expires: Thu, 07 Oct 2021 13:47:51 GMT
-2021-10-07 16:47:51 DEBUG headers:265 - << last-modified: Thu, 07 Oct 2021 13:47:51 GMT
-2021-10-07 16:47:51 DEBUG headers:265 - << pragma: no-cache
-2021-10-07 16:47:51 DEBUG headers:265 - << x-username: ryzhik.sasha@list.ru
-2021-10-07 16:47:51 DEBUG headers:265 - << x-userid: 4594492
-2021-10-07 16:47:51 DEBUG headers:265 - << x-session-id: 9a96aef00bdf0d5b066b61385c86b71d
-2021-10-07 16:47:51 DEBUG headers:265 - << cache-control: max-age=0, must-revalidate, private
-2021-10-07 16:47:51 DEBUG headers:265 - << content-encoding: gzip
-2021-10-07 16:47:51 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
-2021-10-07 16:47:51 DEBUG headers:265 - << x-powered-by: Unisender
-2021-10-07 16:47:51 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2021-10-07 16:47:51 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
-2021-10-07 16:47:51 DEBUG wire:73 -  << "288[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]M[0xd3][0xc9]r[0xda]@[0x10][0x80][0xe1]w[0xd1][0xd9][0x87][0x18][0x90][0x93][0xf8][0xa6]}[0x17][0x2]F[0x1b][0xa9][0x1c][0xb4][0xaf][0x83][0xb6][0x1]d\~[0xf7][0xf8][0x90][0xa2][0xfb][0xfc]W[0x8f][0xa4]O=[0x9f][0xdc]\,[0xd7][0x9e]q[0xef]>[0xb9]&[0xe7][0xde]___8[0xd6][0xb0][0xbe][0xe0][0xde]9[0xe5]l-[0x9e]\[0xde]'[0x99][0xfb]z[0xf9][0x9f]7[0x90][0xf3]E=[0xb1][0xee]8[0xc8][\n]"
-2021-10-07 16:47:51 DEBUG wire:87 -  << "[0xe4]-di[0x18][0xa9]XU#[\r]![0xef] [0xdf][0xc9][0xac]e[0xb1]P[0xa8][0x17][0xc8]<d[0x9f]\c6[0xca][0x9d]7A~[0x83],[0xc4][0x91]RQc1#[0xc8]?![0xa7][0xb6][0xad]VIxi=[0xc8][0xbf] [0xd7][0xa1]*>[0xe6]d[0xcd][0xd1][0x87][0xfd][0x86][0xfc][0xd1][0x93]~[0xca]k[0x83][0x8e][0xcf][0xe9][0xcd][0xf][0xc8]z[0xa9]_[0xbb][0xc8]k[0x9a][0x2]2R#[0xb4]8[0x1d][0x89]ui[0xe1][0xf0][\r]R[0x13]n[0xbe]/[0xfa][0x99]A[0xe1][0xbb]7H[0xed]x[0xb4][0xfc],p[0x85][0xf9][0x4][0x87]#5[0xd5][0x90][0x82][0xd6][0xf3]O}[0x9][0x19][0xa9]in;[0x84]js[0xf7][0x6][0xc8]HM[0x11]S[0x96]T[0xec]<[0xa0]g#5[0xa9][0xd5][0x87][0xf5][0xd1][0xb8]l[0x86]i[0xa4]&w[0xd7]h([0xcb]0 [0x90][0x91]ZS[0x88][0x87]Y[0xbc]6[0xae][0xf9][0xcc][[0xa4][0xc6][0xca][0xdc]b[0xb3]Q[0x1e][0x1a][0xc8]H-[0xcb]oN[0x13][0x87][0xb3]|[0x86][0x8c][0xd4][0x1c][0x93]$[0xfa]HhmAFj[0xe9]-[0xab][0x8f][0xc9]%b[0xb0][0xe][[0xa4][0xe6][0xc7][0xe7]"5T[0xed]|[0x87]i[0xa4]f7[0x9a]|'[0xfb][0xd5][0xec]!#5[0xfb][0x91][0xaa]Qj[0x90][0x0][0xd6]a[0x8b]X[0xcc][0xb9][0xce][3[0xf2]z[\r][0xa6][0x11][0xcb]zYk:[0x17][0xb2][0x4][0x8b][0xbc]C,[0xd7]t[0x8d][0xfc][0xc5]q[0xae][0xc6]sz[0x87]X[0xa4]r[0xcc][0x9c][0xb3][0xe9][0xe7])d[0xc4][0x92][0x88][0xcb][0xd9]R[0x1e]9[0xb] #[0x96][0xd8]s[0x9b][0xa0]3i[0x0][0xaf][0xb6]C,[0xf4][0x16]UEE&[0x9d][0xc1]4bY[0x94]u[0xca]:z[0x8b]a[0x1d]v[0x88]E[0x8b][0xb5])88[0xfb][0x1a][0xbd][0x1a]Z[0xa6][0x86][0x1d][0xd3][0xb6]"[0xc5][0xb0][0x87][0xc3][0x91]Z[0xd7][0x91]Jm&[0xaf]BFj[0xcc][0xd4][0xda]"[0xb6][0xf4]v}f[0x1e][0xa9][0xdd][0xba]*2EWP[0x1d][0xc8]H[0xcd][0xd0]l[0xe7]$[0xba][0xd2][0x0][0x97][0x88]Gj[0xab][0xb6]d[0x1f]TrK[0xf8]%<R[0xb3][0xc4][0xce][0x16]r2[0x1f][0x12]8[0x1c][0xa9]Y[0xa1][0xc0][0x4]#[0xca][0x8][0xfc]1[0x1e][0xa9][0xd1][0xc6][0xa5][0xe6]1[0xf5]{[0x1f][0xa6][0x91][0xda]l[0xba][0x8b][0x1f]z[0xa9][0x2][0xb7][0x84]GjcqZ[0x83][0x3][0xcd][0x1e][0xb0][0xc8]<R[0x13][0x89][0x1e]/c~k[0xe1][0xfa][0xf3]H[0xed][0xfb][0x6][0x1a][0xfa][0xe3]{[0xdd][0xe8][0xf3][0xd9]oH[0xcd][0xcc][0xa3]0[0xcd][0xec]:[0x2][0xf3]7[0xa4]V)[0xda]4$u9[0xc0]4R3[0xb2][0xc9][0x8e][0xb2][0xc4]:J[0xdc][0xd7][0xdf][0xaf][0xc0]$[0xa2]Z9[0x6][0x0][0x0]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "0[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:51 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2021-10-07 16:47:51 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5bc2fcc6
-2021-10-07 16:47:51 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2021-10-07 16:47:51 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.unisender.com:443
-2021-10-07 16:47:51 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.unisender.com:443
-2021-10-07 16:47:51 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2021-10-07 16:47:51 DEBUG RequestAuthCache:77 - Auth cache not set in the context
-2021-10-07 16:47:51 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2021-10-07 16:47:51 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2021-10-07 16:47:51 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
-2021-10-07 16:47:51 DEBUG DefaultClientConnection:274 - Sending request: POST /ru/api/createEmailTemplate?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&subject=Sale&format=json&title=Autumn%20sale%20steam&body=%3Cp%3E%D0%92%D0%B0%D0%BC%20%D0%BF%D0%BE%D0%BB%D0%B0%D0%B3%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20%D1%81%D0%BA%D0%B8%D0%B4%D0%BA%D0%B0%2010%25%3C%2Fp%3E HTTP/1.1
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "POST /ru/api/createEmailTemplate?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&subject=Sale&format=json&title=Autumn%20sale%20steam&body=%3Cp%3E%D0%92%D0%B0%D0%BC%20%D0%BF%D0%BE%D0%BB%D0%B0%D0%B3%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20%D1%81%D0%BA%D0%B8%D0%B4%D0%BA%D0%B0%2010%25%3C%2Fp%3E HTTP/1.1[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Content-Length: 0[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Host: api.unisender.com[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "[\r][\n]"
-2021-10-07 16:47:51 DEBUG headers:278 - >> POST /ru/api/createEmailTemplate?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&subject=Sale&format=json&title=Autumn%20sale%20steam&body=%3Cp%3E%D0%92%D0%B0%D0%BC%20%D0%BF%D0%BE%D0%BB%D0%B0%D0%B3%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20%D1%81%D0%BA%D0%B8%D0%B4%D0%BA%D0%B0%2010%25%3C%2Fp%3E HTTP/1.1
-2021-10-07 16:47:51 DEBUG headers:281 - >> Content-Type: application/json
-2021-10-07 16:47:51 DEBUG headers:281 - >> Accept: */*
-2021-10-07 16:47:51 DEBUG headers:281 - >> Content-Length: 0
-2021-10-07 16:47:51 DEBUG headers:281 - >> Host: api.unisender.com
-2021-10-07 16:47:51 DEBUG headers:281 - >> Connection: Keep-Alive
-2021-10-07 16:47:51 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2021-10-07 16:47:51 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
-2021-10-07 16:47:51 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:53748<->195.13.245.200:443 closed
-2021-10-07 16:47:51 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:53742<->195.13.245.200:443 closed
-2021-10-07 16:47:51 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:53745<->195.13.245.200:443 closed
-2021-10-07 16:47:51 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:53747<->195.13.245.200:443 closed
-2021-10-07 16:47:51 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "server: nginx[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "date: Thu, 07 Oct 2021 13:47:52 GMT[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "content-type: application/json; charset=utf-8[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "transfer-encoding: chunked[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "set-cookie: US_SESSID=c5afb1143bc9f10f8c4b25ffc58f2cc4; path=/; secure; HttpOnly; SameSite=lax[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "expires: Thu, 07 Oct 2021 13:47:52 GMT[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "last-modified: Thu, 07 Oct 2021 13:47:52 GMT[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "pragma: no-cache[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "x-username: ryzhik.sasha@list.ru[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "x-userid: 4594492[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "x-session-id: c5afb1143bc9f10f8c4b25ffc58f2cc4[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "cache-control: max-age=0, must-revalidate, private[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "content-encoding: gzip[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:51 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2021-10-07 16:47:51 DEBUG headers:262 - << HTTP/1.1 200 OK
-2021-10-07 16:47:51 DEBUG headers:265 - << server: nginx
-2021-10-07 16:47:51 DEBUG headers:265 - << date: Thu, 07 Oct 2021 13:47:52 GMT
-2021-10-07 16:47:51 DEBUG headers:265 - << content-type: application/json; charset=utf-8
-2021-10-07 16:47:51 DEBUG headers:265 - << transfer-encoding: chunked
-2021-10-07 16:47:51 DEBUG headers:265 - << set-cookie: US_SESSID=c5afb1143bc9f10f8c4b25ffc58f2cc4; path=/; secure; HttpOnly; SameSite=lax
-2021-10-07 16:47:51 DEBUG headers:265 - << expires: Thu, 07 Oct 2021 13:47:52 GMT
-2021-10-07 16:47:51 DEBUG headers:265 - << last-modified: Thu, 07 Oct 2021 13:47:52 GMT
-2021-10-07 16:47:51 DEBUG headers:265 - << pragma: no-cache
-2021-10-07 16:47:51 DEBUG headers:265 - << x-username: ryzhik.sasha@list.ru
-2021-10-07 16:47:51 DEBUG headers:265 - << x-userid: 4594492
-2021-10-07 16:47:51 DEBUG headers:265 - << x-session-id: c5afb1143bc9f10f8c4b25ffc58f2cc4
-2021-10-07 16:47:51 DEBUG headers:265 - << cache-control: max-age=0, must-revalidate, private
-2021-10-07 16:47:51 DEBUG headers:265 - << content-encoding: gzip
-2021-10-07 16:47:51 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
-2021-10-07 16:47:51 DEBUG headers:265 - << x-powered-by: Unisender
-2021-10-07 16:47:51 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2021-10-07 16:47:51 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
-2021-10-07 16:47:51 DEBUG wire:73 -  << "44[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab]V*J-.[0xcd])Q[0xb2][0xaa]V*I[0xcd]-[0xc8]I,I[0x8d][0xcf]LQ[0xb2]2[0xb6][0xb0][0xb0]066[0xaa][0xd5]Q*O,[0xca][0xcb][0xcc]K/V[0xb2][0x8a][0x8e][0xad][0x5][0x0][0x83][0xa7][0xa7]a0[0x0][0x0][0x0]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "0[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:51 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2021-10-07 16:47:51 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@563d89de
-2021-10-07 16:47:51 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2021-10-07 16:47:51 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.unisender.com:443
-2021-10-07 16:47:51 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.unisender.com:443
-2021-10-07 16:47:51 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2021-10-07 16:47:51 DEBUG RequestAuthCache:77 - Auth cache not set in the context
-2021-10-07 16:47:51 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2021-10-07 16:47:51 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2021-10-07 16:47:51 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
-2021-10-07 16:47:51 DEBUG DefaultClientConnection:274 - Sending request: POST /ru/api/updateEmailTemplate?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json&template_id=3888332&title=Autumn%20sale%20steam%202021 HTTP/1.1
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "POST /ru/api/updateEmailTemplate?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json&template_id=3888332&title=Autumn%20sale%20steam%202021 HTTP/1.1[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Content-Length: 0[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Host: api.unisender.com[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2021-10-07 16:47:51 DEBUG wire:73 -  >> "[\r][\n]"
-2021-10-07 16:47:51 DEBUG headers:278 - >> POST /ru/api/updateEmailTemplate?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json&template_id=3888332&title=Autumn%20sale%20steam%202021 HTTP/1.1
-2021-10-07 16:47:51 DEBUG headers:281 - >> Content-Type: application/json
-2021-10-07 16:47:51 DEBUG headers:281 - >> Accept: */*
-2021-10-07 16:47:51 DEBUG headers:281 - >> Content-Length: 0
-2021-10-07 16:47:51 DEBUG headers:281 - >> Host: api.unisender.com
-2021-10-07 16:47:51 DEBUG headers:281 - >> Connection: Keep-Alive
-2021-10-07 16:47:51 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2021-10-07 16:47:51 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
-2021-10-07 16:47:52 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "server: nginx[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "date: Thu, 07 Oct 2021 13:47:52 GMT[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "content-type: application/json; charset=utf-8[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "transfer-encoding: chunked[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "set-cookie: US_SESSID=f5fb45af550064709c11cf5655d9ce0a; path=/; secure; HttpOnly; SameSite=lax[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "expires: Thu, 07 Oct 2021 13:47:52 GMT[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "last-modified: Thu, 07 Oct 2021 13:47:52 GMT[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "pragma: no-cache[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "x-username: ryzhik.sasha@list.ru[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "x-userid: 4594492[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "x-session-id: f5fb45af550064709c11cf5655d9ce0a[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "cache-control: max-age=0, must-revalidate, private[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "content-encoding: gzip[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:52 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2021-10-07 16:47:52 DEBUG headers:262 - << HTTP/1.1 200 OK
-2021-10-07 16:47:52 DEBUG headers:265 - << server: nginx
-2021-10-07 16:47:52 DEBUG headers:265 - << date: Thu, 07 Oct 2021 13:47:52 GMT
-2021-10-07 16:47:52 DEBUG headers:265 - << content-type: application/json; charset=utf-8
-2021-10-07 16:47:52 DEBUG headers:265 - << transfer-encoding: chunked
-2021-10-07 16:47:52 DEBUG headers:265 - << set-cookie: US_SESSID=f5fb45af550064709c11cf5655d9ce0a; path=/; secure; HttpOnly; SameSite=lax
-2021-10-07 16:47:52 DEBUG headers:265 - << expires: Thu, 07 Oct 2021 13:47:52 GMT
-2021-10-07 16:47:52 DEBUG headers:265 - << last-modified: Thu, 07 Oct 2021 13:47:52 GMT
-2021-10-07 16:47:52 DEBUG headers:265 - << pragma: no-cache
-2021-10-07 16:47:52 DEBUG headers:265 - << x-username: ryzhik.sasha@list.ru
-2021-10-07 16:47:52 DEBUG headers:265 - << x-userid: 4594492
-2021-10-07 16:47:52 DEBUG headers:265 - << x-session-id: f5fb45af550064709c11cf5655d9ce0a
-2021-10-07 16:47:52 DEBUG headers:265 - << cache-control: max-age=0, must-revalidate, private
-2021-10-07 16:47:52 DEBUG headers:265 - << content-encoding: gzip
-2021-10-07 16:47:52 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
-2021-10-07 16:47:52 DEBUG headers:265 - << x-powered-by: Unisender
-2021-10-07 16:47:52 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2021-10-07 16:47:52 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
-2021-10-07 16:47:52 DEBUG wire:73 -  << "2F[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab]V*J-.[0xcd])Q[0xb2][0xaa][0xae][0xd5]Q*O,[0xca][0xcb][0xcc]K/V[0xb2][0x8a][0x8e][0xad][0x5][0x0][0x82][0x8b]=[0x1c][0x1b][0x0][0x0][0x0]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "0[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:52 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2021-10-07 16:47:52 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@a2dfad
-2021-10-07 16:47:52 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2021-10-07 16:47:52 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.unisender.com:443
-2021-10-07 16:47:52 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.unisender.com:443
-2021-10-07 16:47:52 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2021-10-07 16:47:52 DEBUG RequestAuthCache:77 - Auth cache not set in the context
-2021-10-07 16:47:52 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2021-10-07 16:47:52 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2021-10-07 16:47:52 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
-2021-10-07 16:47:52 DEBUG DefaultClientConnection:274 - Sending request: GET /ru/api/getTemplates?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json HTTP/1.1
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "GET /ru/api/getTemplates?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json HTTP/1.1[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "Host: api.unisender.com[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "[\r][\n]"
-2021-10-07 16:47:52 DEBUG headers:278 - >> GET /ru/api/getTemplates?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json HTTP/1.1
-2021-10-07 16:47:52 DEBUG headers:281 - >> Content-Type: application/json
-2021-10-07 16:47:52 DEBUG headers:281 - >> Accept: */*
-2021-10-07 16:47:52 DEBUG headers:281 - >> Host: api.unisender.com
-2021-10-07 16:47:52 DEBUG headers:281 - >> Connection: Keep-Alive
-2021-10-07 16:47:52 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2021-10-07 16:47:52 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
-2021-10-07 16:47:52 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "server: nginx[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "date: Thu, 07 Oct 2021 13:47:52 GMT[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "content-type: application/json; charset=utf-8[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "transfer-encoding: chunked[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "set-cookie: US_SESSID=c0cdcf76f5d08e41567b4b47fb53f34f; path=/; secure; HttpOnly; SameSite=lax[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "expires: Thu, 07 Oct 2021 13:47:52 GMT[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "last-modified: Thu, 07 Oct 2021 13:47:52 GMT[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "pragma: no-cache[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "x-username: ryzhik.sasha@list.ru[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "x-userid: 4594492[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "x-session-id: c0cdcf76f5d08e41567b4b47fb53f34f[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "cache-control: max-age=0, must-revalidate, private[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "content-encoding: gzip[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:52 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2021-10-07 16:47:52 DEBUG headers:262 - << HTTP/1.1 200 OK
-2021-10-07 16:47:52 DEBUG headers:265 - << server: nginx
-2021-10-07 16:47:52 DEBUG headers:265 - << date: Thu, 07 Oct 2021 13:47:52 GMT
-2021-10-07 16:47:52 DEBUG headers:265 - << content-type: application/json; charset=utf-8
-2021-10-07 16:47:52 DEBUG headers:265 - << transfer-encoding: chunked
-2021-10-07 16:47:52 DEBUG headers:265 - << set-cookie: US_SESSID=c0cdcf76f5d08e41567b4b47fb53f34f; path=/; secure; HttpOnly; SameSite=lax
-2021-10-07 16:47:52 DEBUG headers:265 - << expires: Thu, 07 Oct 2021 13:47:52 GMT
-2021-10-07 16:47:52 DEBUG headers:265 - << last-modified: Thu, 07 Oct 2021 13:47:52 GMT
-2021-10-07 16:47:52 DEBUG headers:265 - << pragma: no-cache
-2021-10-07 16:47:52 DEBUG headers:265 - << x-username: ryzhik.sasha@list.ru
-2021-10-07 16:47:52 DEBUG headers:265 - << x-userid: 4594492
-2021-10-07 16:47:52 DEBUG headers:265 - << x-session-id: c0cdcf76f5d08e41567b4b47fb53f34f
-2021-10-07 16:47:52 DEBUG headers:265 - << cache-control: max-age=0, must-revalidate, private
-2021-10-07 16:47:52 DEBUG headers:265 - << content-encoding: gzip
-2021-10-07 16:47:52 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
-2021-10-07 16:47:52 DEBUG headers:265 - << x-powered-by: Unisender
-2021-10-07 16:47:52 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2021-10-07 16:47:52 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
-2021-10-07 16:47:52 DEBUG wire:73 -  << "E72[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xed][0x9d]kn$[0xd5][0x15][0xc7][0xb7]bY[0xe2][0xdb][0x80][0xef][0xfb]QB[0x8c][0xb2][0x86]|LG[0xd6]}[0xce]8[0xf2]K[0xee]v[0x8] $H[0x16][0x80][0x12][0xe5][0xfd]i[0xd8][0x1]R[0x82][0x14][0x85]([0x91]XAO[0x96][0xc0]J[0xf2][0xbf]U[0xdd]v[0xd7]tU[0xbb][0xca][0x1][0x81][0xab][0x0][0xb7][0xa9][0xe9]c[0xf7][0xcc][0x9c][0xfe]q|[0xee][0xff]<[0xea][0xa3][0xe3][0x9b][0xb4][0xbc]=_[0x1d]W?[0xfb][0xe8][0xf8],[0x1e]W[0xdc][0x18][0xc3]9{v[0xbc][0xbc][0xf5][0xa7][0xb7][0xcb]tsz~[0xf5][0xe2][0xec][0xf2][0xb8]:>~v[0xbc]:[[0x9d]'\[0xfe][0xe4]vu{qy[0xb4]t[0xe7][0xe9]h[0xb9]J[0xee][0xe2][0x88][0x11]F[0xf1][0x5][0xe7][0xee][0xf2][0xc5]i[0xb8][0x8a][0xe5][0x8b]nn[0xf1][0x4]^[0xe5][0x17])[0xe0][0xe5][0x8f][0x8a]/[0xc6][0x13]n[0xb5]r[0xe1][0xe5]E[0xba]\-[0x9b][0xd7]\[0x86][0x9b][0x94].[0x97]/[0xaf]V[0xa7][0xb7]7[0xe7]x[0xee][0xe5]ju[0xbd][0xac][0x16]'[0x8b][0x93]p[0xfd][0xce][0xed][0xe5][0xd9]2][0xc6]t[0xf3]N[0xb8][0xba]X[0x9c][0x9c]][0xbc]X[0x9c][0xac][0xd2][0xc5][0xf5][0xb9][[0xa5][0xd3][0xeb][0x9b][0xf4][0xcb][0xb3][0xf4][0xfe];[0xd7][0x97]/[0xf0][0xca]x[0x1d]<[0x89][0xbf][0xc2]q[0xf9][0xc3][0xbc]M[0xc9][0xdb]D[0x1f]Q^[0x9]]I[0x6][0xfb][0xed]u<h[0xbf]H[0xcb][0xa5]{[0x91]N[0xf3][0xd5][0xcd][0x85]+[0xe2][0x1b][0xf7][0xfe][0xe9][0xcb][0xd5][0xc5]y[0xf9][0x8b]p][0xfe]J[0xc5][0x1f][0xf8][0x95][0xbf][0x8a][0x1f][0xe0]W[0xef]^[0xbf][0xb7][0xfe][0xdd][0xfa][0x8b][0xf5][0xbf][0x8e][0xd6][0xff]Y[0xff]{[0xfd][0x15].[0xff][0x86][0xc7][0x97][0xaf][0xfd][0xfa][0xd3][0xd7][0x9f][0x1d][0xbd][0xfe]t[0xfd][0xcf][0xf5]?[0xd6][0xc7][0xe7]/[0x8e](y[0xeb][0xdd][0xc5][0xc9][0xf5]{[0xf8][0xee][0xf2][0xb2][0xcd]+\[0xde][0x9e][0x9f][0xfc]l[0xc7][0xef][0xc4][0xfc] [0xfc][0xe]/[0xdf],?|[0xd3][0xf7][0x0][0xe5][0xec][0xc3][0xb4]8)o[0xc9][0xdd]{[0xb6][0xc2];[0xb3]\][0xdd][0xc0]q{_[0xbf]8[0xa1][0x92][0xfc][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[0xf]\p[0xca][0xa4]c[0xc6]f[0xaa]U[0x90]R[0x4][0xe9]U[0xa4][0x8c]2[0x1b][0x94]0[0xf8][0x8a][0xb3][0xb][0xbc][0xc4][0xe2][0xe4][0xfe][0x95]q}[0xed][0x1a][0x2][0xb7]o[0xf8][0xe2][0xc4][0xd4][0x1f]|q[0x82][0xef]([0x17][0x5]V[0x82][0x8b][0xe6][0xdb][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[0x8][0xcf][0xa9][0xe2]\QA[0x88]8[0xc4][0x4][0xa9][0xc8]A&`[0xe7][0xf8][0xfe][0xef][0x87][0x89]g[0xc7][0x19]d[0x14]o[0x9f][0x1e][0xf8][0xbf]c[0xe8][0xfb][0xf0]]xv[0x97]Z[0xa6][0xd4]D[0xa9][0x15]2[0x10]G-[0xe5]1[0x8][0x12][0x83]T2zm[0xac][0xe4][0xdc]Eb[0xa9][0x18]G-[[0x9c][0xa8][0xfa][0xa3]P[0xb][0xa7]uP[0xcb][0xf1][0xf4][0x1]j[0x99][0xae]D[0xa1][0xba]/[0x92][0x15][0xbb][0x9c]![0xb5]C=[0xdb][0xa6][0x96]L[0x94][0xda][0xe4][0x8]Q[0xce]x[0xc7]l[0x8e]>[0xc7][0x98][0xf1][0xaf]$[0xde]))[0xad][0xf7][0xf4]1[0xd4]"[0xdc]6[0xd4][0xe2]b/[0xd6]r[0x84][0xf1]C[0xd4][0xaa]J[0x96][0xdc][0xa0][0x97][0xda][0x8d]}n[0xb1][0xb6][0xa1][0xf6]a[0xcf][0xb6][0xa8][0x95]b[0xa2][0xd4]z[0x97][0x3][0xe1]<[0x9a]LCJ[0xca]9[0x1e][0xac]t[0xd1]z[0xc6]c[0xc]z<[0xb5]rq[0x82][0x0]]S+q[0xb1]O-1[0xf6][0x10][0xb5][0x2][0x89][0xe3]!ja7[0xf3][0x8c][0xb5][0x83]<[0xdb][0xa2][0x96][0xf3][0x89]R[0xab][0xa2]c^[0x86][0x90][0x98][0x93][0x99][0x93][0xe8][0xb2][0xd6][0x8c]Sj[0x1][0xaf]b[0xd9][0x8f][0x8e][0xb5]Hm[0xcb]G[0xa1][0x96][0xe3]b[0x8f]Z<[bi[0xdf]Y[0x87][0xb2][0x8a][0x14][0xaa][0xfb]b[0xed][0xd6]>[0xc3]X;[0xc8][0xb3][0xbb][0xd4]R[0xab]'J-[0xe2][0xab][0xd6][0xdc]z[0xe5][0xa4]5\[0xe3]p[0xe6][0xbc][0xb4]B'j,![0x9][0x9e][0x1a]sf@h[0xb6][0x8b][0x13][0xdd]P[0xb][0xa7]uP[0x8b][0xe3]X?[0xb5][0xac][0x92][0xaa][0xe2][0xfd][0xd4][0xd6]vAf[0x18]k[0x87]z[0xb6]E[0xad][0xa2][0x13][0xa5][0x16][0x87]z[0xe1][0xb5][0x7]a2[0x18][0xaa][0x90][0xca]Z[0xce][0x82][0xcd][0x9a]8Clp[0xa3][0xa9][0xc5][0x9][0xc][0x1e].[0xb1][0x96]*\[0xec][0xc5]Z[0xa2]y[0xa1][0xae];[0xd6]2[0x1c][0xb5]*V2[0x80][0xee]X[0xdb][0xd8][0xb][0xd5]s[0x8b][0xb5]p[0xe5] [0xcf][0xee]RK[0xe8]T[0xa9]%:*A[0x99][0xf6]Q[0x15][0x1][0xcc]G![0x92]S[0xde][0x1b]h[0x9]"[0xe8][0x91][0xd4][0x16])[0xed][0x8e]Z8m[0x9f]Zb[0xb8][0xe9]W[0xbe][0x90][0x1e][0xa8][0x8a][0x15]e[0xab][0x8f][0xda][0xad]}n[0xd4][0xe][0xf5]l[0x8b]Z[0xf2][0xc3][0xd0][0xc9][0xbf]}[0xbd][0x96][0x4][0x9b][0xa2][0x9][0xce]YF[0x2][0x13]$[0xa9][0x12]i[0xb9][0xce]A1A[\r]N[0x0]c2[0x4][0xf8][0x16][0x1f]8[0xef][0x96]XK[0x8].[0xde][0x8c][0xb5][0xc4][0xd0]Zo[0xed][0x8b][0xb5][0x84]V[0xa2]_C[0x0][0xd5][0xb0][0x17][\r]b[0x86][0xd4][0xe][0xf2][0xec][0xe][0xb5][0xda][0xda][0xa9][0x9e][0xc6][0x2][0xe2]l2)[0xb][0x14][0x1a][0x92][0xf6]AR&[0x98][0xd2]I:[0xe7][0x92][0x95]c[0xa8]E[0x16][0x8b][0xa4][0x16][0x1f][0xcd]i[0xac]8[0xad][0x83]Z[0x1c][0xf6][0x8a]F[0xd0]M-[0xad]$2[0x84][0xfe]*Cc[0x9f][0x9d]^;[0xc2][0xb3]-j[0xd5]T[0xa9][0xe5]D[0x10][0xe7][0xa2]dT;[0xc0][0xab][0x3]t[0x3][0x1f]e[0x8e][0x94][0xea]H[0xdc][0x98]*C[0xe3][0xdb]Rb[0xa8]c[0xad][0xb6][0xaa][0x8b]ZeX[0xbf][0xf2][0x85]@J[0xe][0xe5][0xb5][0xf7][0xf6]Y[0xc5][0xda][0x11][0x9e]mQ[0xcb][0xed]DOc[0x92]K[0xe2]"[0x84].[0x12][0x82][0xe7]R[0x9]OS[0xb0][0xd6][0x98][0xcc][0xa5][0x8c]$[0x8f][0xc8][0x10][0x1a][0xdf][0x82][0xd4][0x12]n[0xb][0xb5][0x1c][0x17]{[0x19][0x82][0xd4][0xfa][0x10][0xb5][0xc]2A[0xbf]^K[0x11][0x88]+9;[0xbd]v[0x84]g[[0xd4][0xb2][0xa9]*_6rC[0x18]1[0x1e][0x11][0x96][0xa0][0x8a][0x9b][0x95]K[0x82][0xfb][0xec][0x8c][0xe6]Z[0x93]1U[0x86][0xc6][0xb7][0xc8]eqQS[0xcb]p[0xb1]O[0xad]T[0xfd][0x1a][0x2][0xad][0xa8][0xad][0xe8]!j[0x8b]}v[0x1a][0xc2][0x8][0xcf][0xb6][0xa8]%S[0xad][0xe8]Jo[0x98][0xf7][0x1c][0xb4][0x1a][0x95],[0xda]f<[0x17]T[0x11]&5[0xb][0xd9]ZD[0xcb][0xc1][0xa7][0xb1][0xc6][0xb7][0xcd][0x81][0xac][0xa6][0x96]tTt[0x89][0xc0]1[0xed]@^K[0xd0]Q[0xd5][0xaf][0xd7][0xd2]jk[0x9f]a[0x86]0[0xc8][0xb3][0xbb][0xd4][0xe2]-[0x98]h[0x86][0x80]b[0xae][0xc][0x9a]([0xe9][0x89][0xb5][0x10][0xe]|[0x80][0xfa]EdfNd[0xc2][0xd3][0xc8][0xc][0x1]M^[0x9b][0x9f]f[0xa0][0x16]N[0xeb][0x88][0xb5][0x82][0xea][0xfe]*[0x3])U[0x4][0xd2][0x1f]kk;[0x9d]][0x95][0x1]>[0x1d][0xea][0xd9]]j)[0x9b]j[0xcf][0x97]'8~[0xa1]$[0xa6][0xa4]R[0xce][0xba][0xc0]|[0xf6][0x89]zR[0xea][0xe][0xc6][0xfa]1[0xb5]1[0xf8][0x16][0x9]E[0xd3][0xe6]Qb-[0x9c][0xb6]G[0xad][0x94][0x4][0xbf]Qw[0xac]U[0xe8][0xaa]E[0x9b]bo[0xcf]W[0xcb][0xfe][0xa8]X[0xfb][0xea][0x9b]O[0xfe][0xb2]~[0xf5][0xf5][0x17][0xeb]W[0xaf][0xff]|[0x84]O[0xc2][0xe3][0xf]x[0xe2][0xab][0xcd][0x93]l[0xfe][0xfb][0xf5][0x97][0xeb][0xcf][0xbf][0xf9][0xe4][0xaf][0xeb][0xcf][0xd7][0xbf][0xc1][0xe3][0xb3][0xa3][0xfa][0xe2][0xd5][0xeb][0xdf][0xe3][0xf1][0xdb][0xf5][0xab][0xff][0xe2]Q[0xae][0xbf]>[0xd0][0xe5][0xfa]=u4[0x8e]x[0x7][0xda]tOUkP[0xc4]*t[0xe0][0xda][0xc8][0x92]W[0xde][0x9][0xef][0xd0][0xd0][0x18][0x9c][0xe2][0x81][0x9a] m[0x18][0x97]I4to[0xb4][0x6][0xca][0xf6][0xb5][0x6][0xd0][0xcd][0xfa][0xf2]_u[0x84][0xe4]V[0xea][0x8a][0x17][0xfa];[0xaa][0x11]w[0xf6]G[0xe7][0xbf][0xb3][0xa1][0xfb][0xe1]w[0xa0]E[0xf7]d[0xab][0x16][0xdc]Z-[0xb8][0xe6])[0x98],2[0x4][0xe0]@"%N[0x8b] DFG[0xce]h[0xba][0xef][0xb4]uM;[0xaa][0x16]RX[0xf4][0xaf][0xf7][0xc5]n[0xd0][0xcd]Mo[0xf]YMw[0xb1]?Z[0x93][0x98][0x7][0xdd][0x83][0xde][0x81]][0xba][0x89][0x9d][0xea])[0x10][0xcd]:[0xd4][0x1a]j[0x90]Eg[0xe2][\r][0xb5][0xa8]"[0xe3][0x14][0x18][0xd0][0x5][0x81]hN1<1[0xe6][0x14][0x8][0xc7]"[0x87][0xc6][0xe7][0x92][0x99][0xc0]i[0xfb][0x99][0x89]0[0xe8][0x17]>@7[0xeb][0xd7].j[0xba][0xb7][0xf6][0x1f]3[0x93][0x8e])[0x16]d&C[0xdf][0x81][0x16][0xdd]f[0xaa]}[0x12][0xa8]w t;[0xa7]2CGZJ[0x1]9I"[\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[0xf5]f[0x9b][0x2][0x8b][0xc8][0x9c]G[0xd2][0x8d]cM[0xd3][0xdd][0xa3]Q\[0xee][0xa2][0x9b][0xd6]zqG[0xed][0xae][0xa1][0x97]U[0xbc]g[0xd6][0xe2][0xce]^2[0x97][0x1f][0xe9][0xee][0xa5]{[0xd0];[0xd0][0xa2][Ov[0xfe]-kj[0x94]vD[0x93][0xa0][0xb2]e[0xdc](+[0x12][0x13][0x8e][0x1]{E[0xc7][0xf4][0x9]7[0x91][0xa3]9[0xb7][0xd7][0xb1][[0xef][0xcf][0xbf]I[0xa1][0x99][0xe9][0xd1]Bjz[0x89][0xa9]H[0xd1]:[0xfa][0xf2][0xee][0xad][0xfd]G[0xba]{[0xe9][0x1e][0xf4][0xe][0xb4][0xe9][0x9e]j[0xb7][0x90][0xc][0xcc]p[0x9b]sr[0xd0]K[0x88][0xa4][0x1a][0x8a]I@[0x19][0x8f][0xf3][0x0][0xed]O[0xe0][0x7][0xdd][0xc8][0xd8][\r][0xdf]6[0xdd]B[0xa0]{[0xbf][[0x8]tSR[0xfa]&[0xfa]b7[0x91][0xcd][0xf4]f/[0xdd][0xb0][0x97][0xd8][0xfe]([0xba][0xff][0xef][0x89][0xdf][0xef]O[0xb][0xc1][0x1b]1[0xc8][0xb3][0xf7][0xd4]*![0xd4]Tk[0x81]Np[0x12] [0xc4][0x98][0x12][0x81][0xc8][0x17][0xd1][0xd8][0xa6][0xb8]4[0xd9]Rd[0xd6]vp[0xdf][0x5]R[0x13]|->p[0x1][0xf7]"[0xb4][0x17][0xa7][0xbd][0x99]q0[0xa2][0xa9][0xaa][0xa7]3[0xdf][0xa0][0x96][0xd8][0xb7][0xa9]=[0xa2][0xba][0xa2][0xa2]s&[0xb9]e[0x9f][0xd7]L[0xf2]8[0xcf][0xee]R[0xcb][0xc8]d[0xf5]i[0x1d]J[0x9][0x1b][0xc3]F[0x19]i1[0x9][0x8e][0xbb][0xe0][0x85][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[0x88][0xb8][0x18][0xf0][0x1c][0x9e]I4[0xbe]EpEP([\r]C[0xa0][0x16]N{[0x93]Z[0x8a][0xbe]7[+t[0x1d][0xd4][0x9a][0x8d][0x86]!;[0xf2][0xe4]Bm[0xcb]>[0x9f]X;[0xce][0xb3]mj'[0xab];[0xa3][0xde]g2[0x4]f[0x82][0xcf][0x84][0x82][0xd3]`1K[0x9f][0x1d]MhvS[0x83][0xb5][0x8b]][0xdf][0xd6][0xaa]g[0xa1]vOw[0xae][0xa9][0xa5]=[0xb1]vK%[0xef][0xe8][0xcc][0xdc][0xa5][0x96][0xcf]1[0xd6]6[0xf1][0xe0]a[0xcf][0xb6][0xa9][0x9d][0xaa][0xe2]&[0x2]':[0x13][0x19]K[0xc5][0x9a][0xa1][0x98][0x91]8[0xb2][0xdb][0x88][0x3][0x9c]#[0x1e]e[0xec][0xa1]y[0xed].[0xb5][0xb5][0xe2]V[0xa8][0xdd]S[0xdc]@-[0x92][0xe7][0x8e].[0xf8];*[0xd1]W[0xd1]5q[0xb4]k[0xaf][0xa7]C[0xe7][0x19]k[0x1f][0xf6][0xec].[0xb5][0xd3][0x9d][0xee][0x14][0xe][0xb9][0x1][0xd6][0xed]dc,[0x8b]\[\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[0x1f]#[\r][0x11][0xcd][0x9a][0x8a][0xda]X~[0xc6][0xf];[0x8d]5[0xd4]B:[0xdb]Nwb[0x8e]i[0xba][0x13][0xd4]R[0x4][0xf4][0xde][0xc][0xc1]T[0x92]T[0xb4]c[0xe2]hC[0xed][0xbd]}n[0xd4][0xe][0xf5]l[0x9b][0xda][0xa9][0xee]`[0x96][0x18]h[0xbf][0x18]DV2[0xf1][0xac][0xc1],SFxf[0x98][0x8][0xd4][0xf][0x9e][0x93][0xdb][0xa5][0xb6][0xde][0xff]P[0xa8][0xdd][0xdb][0xff][0x80]B[\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[0x9a][0xe3];[0xe6][0xe4]6T[0x96][0x6][0xb7][0xaa][0xde]h[0xf6][0x86][0x86][0xd0][0xb2][0xcf]k[0xe2]h[0x9c]g[0xdb][0xd4]N[0xb5]j[0x91][0x83][0x6][0xaf][0x16][0xc2][0x17][0x81][0xe0][0x95][0x95][0x8a][0xc1]Q[0xd4][0x9f][0x89]tY8:[0xb8][0xe2][0xbc][0xeb][0xdb][0xba]jQ[0xa8][0xdd][0xab]Z[0x14]j[0x85][0xe9][0xcf][0x10]@-[0x1a][0xdd][0xf]R[[0x1a][0xe1]g[0x98]!4[0xb1][0xf6]a[0xcf][0xb6][0xa8]5c[0xab][0x11]p[0xec][0xb7][0xbb][0x0][0xf1];[0x18][0xec]D[0xa1][0xd8][0x19]t[0xb6][0x85][0xd2]@[0x8c][0xf5]%A$I)[0xd6][0x99]eL[0xcc][0xb9][0xf1][0xc9][0x1][0x8a][0xf][0xf5]">[0x0]k[0xf6][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[0x11][0x5]X[0xde]UD[0xbe][0xb][0xa3][0x2]E[0xe4][0x8e]![0xfa]=[0xfb][0xc][0x93][0x83]A[0x9e]m[0x3]+G[0xb6][0x12]?[0x1]`[0xb5]d[0xde][0xc5][0x92][0x1d][0x10][0xeb]r[0xb4])[0x89][0x94][0xca]^3/[0x91]z[0xc6][0xf1]y[0x1][0xdc][0x8a][0xb0][0xdc][0x0][0x8b][0x8b][0xf6][0xc4]F[0x1][0x96][0xe9]~[0xbd][0xb][0xb][0xf6][0x10]dK[0xb6][0xdb][0x97][0x17]l[0xed][0xf3][0x4][0xf6]a[0xcf][0xb6][0x80][0xd5]cU[0xda]'[0x0],[0xa5][0x14]}[0xb]@[0xd3][0x6][0x1f][0xb4]!FH,}[0x8]"F[0xc]pD7xX[0xe3].%@)[0x1][0xd7]5[0xb0][0x1a][0x17]{[0xc0]*[0xdb][0xb5][0xc8][0xec]>[0x82][0xf2][0xce][0xb6][0xf7]=[0xfb][0xc][0x81][0x1d][0xe4][0xd9]6[0xb0]c[0x5][0xda]'[0x0],[0xd6][0xe5]b[0x13][0x94][0xc7]I[0xcb][0x7][0x11][0x82][0xa0][0xc9]PL[0xd2]'[0xc7][0x95]bh{[0x1f][0xad][0x17][0x94]"[0xd8][0x16][0xd8][0xe]m[0x16]}[0x10][0xf6][0xd0][0xc9][0x8b][0xa3]-[0xb8]_/@[0xc3][0xf0][0xc6]>O`[0x1f][0xf6]l[0x1b][0xd8][0xb1][0xda][0xec][0x13][0x0]6a^S[0x87][0xc8][0xd0][0xe8][0x8b][0xee][0x19][0xa9][0x8c]T[0xe8][0x17][0xcb][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[0xab]N1[0x89]\[0x96][0xe2][0x8c][0x14][0xb8][0x0][0xec]F<[0xa4][0xba]C[0x96]5[\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "z-[0xfc][0xd2]][0x2][0x3][0x90][0x90]e[0xf][0x1d][0xba][0xb6][0xf6]y[0x2][0xfb][0xb0]g[[0xc0][0xca])[0xe6][0xb0][0xe][0xfd]X[0x96]8[0x86][0x15][0xf]>Y[0x93][0xb3][0xe1].[0xc9][0x84]u:[0x12][0xdd][0xe9]#[0xab]_[0xe0][0x1b]i[0xd6]6[0xd3]*[M[0xf6]S[0x2]t[0xc8][0x1c][0x2]V[0xa0]9[0xf7]@[0xe][0xcb]7[0xf6][0x19][0x2];[0xc8][0xb3]-`[0xc5][0xd8][0x1c][0xf6][0xbb][0xb9]W[0xc2][0xb7]/[0x15]`[0xdb][0xb9][0x10],3[0x91][0x8][\r][0x10][0x9e][0x10]a[0x15]f[0xe0][0xc][0xf4][0xae][0x8c][0xc9][0xb8]8:[0xcc]6-2u"+:[0x13]Y[0xec]T?@-C[0xcf][0xe2]![0xa9][0xa0][0xd8][0x1f]=+[0xf4]$[0xbb][0xba][0xee][0x8e][0x8][0x83]<[0xdb][0xa6]v[0x82][0x89][0xac]r[\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "K[0xcb]<R[0xd7][0xc0]$n[0xb][0xa1][0xa3]U[0x6]g1[0x96][0xd1][0x9a][0x88]E[0xd2][0x8f][0x1]v[0x9b]n[0x89][0xce]D[0x96]t[\r][0xb7][0xdd][0x9d][0xac][0xb0][0x8e][0x9f][0x1f][0x4]vc[0x9f]a[0x98]-[0x95][0x99][0xcd][0x11][0xa1][0xdf][0xb3]-`[0xf9]T[0xb]_[0x9e]Q[0x8e]>[0xf0]`I[0xc4][0x14]&[0xea]^\[0x6][0x1e]i[0xf6][0x8a]c[0xf5]9[0x1f][0x9f][0xcd][0xc2][0xb1][0xdb][0xc2][0x17][0xef]*|a#I[0xa1][0xb2]/[0x9b]-3[0xc7][0x1d]#[0x99][0xf7]T[0xc3]^[0x6]'fH[0xed] [0xcf][0xb6][0xa9][0x9d]j[0xe1]+A~[0xe5][0xde]9[0xcc][0xa2]9lw [0x10][0xb8][0xac][0xc5]([0xbb](Z[0x82].[0xcd]-#[0xcf]`[0xf0][0xed][0xb6]<S[0x98][0xdf]Ki[0xa5]4[0xfd]M[0x6]h[0x9e][0xb5][0x95]8$[0x1a][0x14][0xfb][0xbc]Z[0xbe][0xef][0x92][0x83]A[0x9e]mQK[0xa7][0xba][0x92]$[0x96]s[0x97][0x93]Q[0xe9](E2B%A9[0x8b][0x99]f[0x17][0x14]:iGS[0xdb][0xd4][0x15][0xeb][0x94][0xb6][0x8]e{[0xd4][0xa2][0x11][0xfc][0x10][0xb5]DTu[0x9b]a_1[0xa1][0xd8]gJ[0xed] [0xcf][0xb6][0xa9][0x9d]`JK[0xb8][0xb1][0xc8][0x9][0x90][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "`[0xcc][0xd7]1[0x8d][0x9d]e[0xc][0x15][#4[0xee]B[0x5][0x1][0xe1]1[0xc0]n[0x13]/[0xda][0x95][0xd2][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[0xec][0xaa]>[0x90][0x1c][0x10][0xf4]ru[0xcc][0x8d][0xdd]%[0x7][[0xfb][0xc][0x93][0x83][0xf2][0xd3]k[0x93][0xd2][0xf6]{[0xb6][\r][0xec][0x4][0xb5]Y*[0xd1]D@Q5[0x90]XQ[0x96][0x11]gs[0xc4][0xc0]:[0xa7][0x11]m[0xda]:gxhd^[0x0][0xb7]n[0x15]D[0xda][0xa5][0xcd][0xa2][0x93][0xb6][0xbf][0x98][0x80];K[0xe1][0xd6][0x11][0xfd][0x8d][0xde][0xf7][0xf6]y[0x2][0xfb][0xb0]g[[0xc0][0x92][0xb1][0xa3]`[0x88]$?[0xf4][0x86][0x18][0x15][0x18][0xf]D[0xb]Gr[0xa2][0xb8][0xff][0x89][0xc8]Y[0x1a][0x97][0xbc][0x10]R[0xb][0xf4][0xcd][0x8e][0x6][0x16]>[0xdd]L[0x81]Q[0xb2]7[0x5][0x86][0xfe][0x2]d[\n]"
-2021-10-07 16:47:52 DEBUG wire:87 -  << "[0xfd][0xc7]/[0x0]);7Bn"[0xec][0xbd]}[0x86][0xc0][0xe][0xf2]l[0x1b][0xd8][0xb1][0xa2][0xc1]S[0x0][0xd6][0xa0][0xe3]:eF[0xd1][0xe][0x83])0[0xf]1V[0x6][0xdc];[\r][w[0xa3]@?[0xd7]c[0x80][0xdd][0xea][0x5][0xa4]K/[0x10][0xe4]@C[0xc][0x80]D[0x8e][0xda][0xdf][0x10]so[0x9f]'[0xb0][0xf]{[0xb6][\r][0xec]X[0xbd][0xe0][0x9][0x0][0xeb]I-fI[0xc]mS[0x86][0x9e]X[0xa2]2[0x1a][\r][0x14][0x84][0xda][0xa0][0x83](w[0x7][0x1e][0x99][0x12][0xe0];[0xb6]RA[0xd9][0xd8][0xbb]w[0xe8][0xc2][0xfe][0x90]C[0x11]V[0x98][0xc3][0xc0]n[0xed][0xf3][0x4][0xf6]a[0xcf][0xee][0x2]K[0xec][0x4]{d%F[0xf]t4[0x18][0xf7][0xb2]XA[0xe3][0x4]C[0x83][0xc][0x16]GS[0x8c][0xc]H[0x1e][0xd3][0xc8][0x86][0x18][0xd0][0x8a][0xef][0xd8][0xf4][0xc8][0xc2]_[0x1d][0xc0][0xe2]\[0xd7][0xb1][0x8a][0xe6][0xee]G>[0xc7][0xce][0xfd]~E[0x16][0xf7]N[0xdb][0xd8][0xe7][0x6][0xec]P[0xcf][0xb6][0x80]5c[0xb5][0xad]'[0x10]aq[0xd7]>[0x17][0x9c][0x14][0xe8][0x90]%[0xd8]x'#vBS[0x8b][0x1d][0xbb]![0x89],[0xe5][0xc8][0xfe][0x2][0xb8][0x15][0x90][0x82][0xd9]"k[0xe1]&[0xa9]][0xc0][0x92][0xfa]n<[0xdd]%[0x4][0xdc]`[0x8a]t[0xde][0xcf][0xef][0xe][0xe8][0xad]}[0x86][0xc0][0xe][0xf2]l[0x1b][0xd8][0xb1][0xfd][0x5]O[0x0]X[0x8c][0x1e][0xe0][0xce][0x11][0xe8][0xe1][0xe6][0xe8][0xd8]B[0x93][0x1][0xc3][0xf8][0xc]w([0x1c]x[0x9][0x8c][0xf9][0xc8][0x94][0xa0][0x1]v[0xd3]#[0x8b])[0xb2][0xe]`q[0xee][0xea][0x97][0xb5][0xb0][0xf7][0x19][0xd5][0x81][0xfe][0xe][0xae]{[0xfb]<[0x81]}[0xd8][0xb3]m`'(ki[0x8e][PGk[0xb0]f[0x3]7[0xaa].j[0x96][0xc0]zDA[0xa2][0xf0][0xb9][0xcc][0xd7][0x8e][0xcb]a[0x1b]`[0xf1][0xb9][0x89][0xb0][0xb8][0xd8][0xcb]a[0xa9][0xa9][0xe7][0xb4][0xfa]",[0xd6][0xc5][0xd4]wT[0xed].[0x1c][0x0][0xd8][0x8d][0xfd]1[0xc0]>[0xfe][0xfc][0x8][0x8f][0xcd]?[0x9b][0xcb]#J[0xde]zwqr[0xfd][0x1e]~[0xd3][0x1b][0xf7][0xfe][0xa9][0xbf][0x8a][0x1f][0x1c]W[0x97][0xb7][0xe7][0xe7][0xdf][0xc7]:[0xa3][0xa6][0xb6]5[0xd4][0x8d][0x1f][0xff][0xfc][0xe3][0xff][0x1][0xe2][0xe7]a)[0xe7][0x86][0x0][0x0]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "0[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:52 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2021-10-07 16:47:52 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@fbcba93
-2021-10-07 16:47:52 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2021-10-07 16:47:52 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.unisender.com:443
-2021-10-07 16:47:52 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.unisender.com:443
-2021-10-07 16:47:52 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2021-10-07 16:47:52 DEBUG RequestAuthCache:77 - Auth cache not set in the context
-2021-10-07 16:47:52 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2021-10-07 16:47:52 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2021-10-07 16:47:52 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
-2021-10-07 16:47:52 DEBUG DefaultClientConnection:274 - Sending request: GET /ru/api/getLists?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json HTTP/1.1
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "GET /ru/api/getLists?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json HTTP/1.1[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "Host: api.unisender.com[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "[\r][\n]"
-2021-10-07 16:47:52 DEBUG headers:278 - >> GET /ru/api/getLists?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json HTTP/1.1
-2021-10-07 16:47:52 DEBUG headers:281 - >> Content-Type: application/json
-2021-10-07 16:47:52 DEBUG headers:281 - >> Accept: */*
-2021-10-07 16:47:52 DEBUG headers:281 - >> Host: api.unisender.com
-2021-10-07 16:47:52 DEBUG headers:281 - >> Connection: Keep-Alive
-2021-10-07 16:47:52 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2021-10-07 16:47:52 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
-2021-10-07 16:47:52 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "server: nginx[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "date: Thu, 07 Oct 2021 13:47:53 GMT[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "content-type: application/json; charset=utf-8[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "transfer-encoding: chunked[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "set-cookie: US_SESSID=2892e949f926197e0db5fd89da8b8d19; path=/; secure; HttpOnly; SameSite=lax[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "expires: Thu, 07 Oct 2021 13:47:53 GMT[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "last-modified: Thu, 07 Oct 2021 13:47:53 GMT[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "pragma: no-cache[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "x-username: ryzhik.sasha@list.ru[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "x-userid: 4594492[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "x-session-id: 2892e949f926197e0db5fd89da8b8d19[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "cache-control: max-age=0, must-revalidate, private[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "content-encoding: gzip[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:52 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2021-10-07 16:47:52 DEBUG headers:262 - << HTTP/1.1 200 OK
-2021-10-07 16:47:52 DEBUG headers:265 - << server: nginx
-2021-10-07 16:47:52 DEBUG headers:265 - << date: Thu, 07 Oct 2021 13:47:53 GMT
-2021-10-07 16:47:52 DEBUG headers:265 - << content-type: application/json; charset=utf-8
-2021-10-07 16:47:52 DEBUG headers:265 - << transfer-encoding: chunked
-2021-10-07 16:47:52 DEBUG headers:265 - << set-cookie: US_SESSID=2892e949f926197e0db5fd89da8b8d19; path=/; secure; HttpOnly; SameSite=lax
-2021-10-07 16:47:52 DEBUG headers:265 - << expires: Thu, 07 Oct 2021 13:47:53 GMT
-2021-10-07 16:47:52 DEBUG headers:265 - << last-modified: Thu, 07 Oct 2021 13:47:53 GMT
-2021-10-07 16:47:52 DEBUG headers:265 - << pragma: no-cache
-2021-10-07 16:47:52 DEBUG headers:265 - << x-username: ryzhik.sasha@list.ru
-2021-10-07 16:47:52 DEBUG headers:265 - << x-userid: 4594492
-2021-10-07 16:47:52 DEBUG headers:265 - << x-session-id: 2892e949f926197e0db5fd89da8b8d19
-2021-10-07 16:47:52 DEBUG headers:265 - << cache-control: max-age=0, must-revalidate, private
-2021-10-07 16:47:52 DEBUG headers:265 - << content-encoding: gzip
-2021-10-07 16:47:52 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
-2021-10-07 16:47:52 DEBUG headers:265 - << x-powered-by: Unisender
-2021-10-07 16:47:52 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2021-10-07 16:47:52 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
-2021-10-07 16:47:52 DEBUG wire:73 -  << "288[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]M[0xd3][0xc9]r[0xda]@[0x10][0x80][0xe1]w[0xd1][0xd9][0x87][0x18][0x90][0x93][0xf8][0xa6]}[0x17][0x2]F[0x1b][0xa9][0x1c][0xb4][0xaf][0x83][0xb6][0x1]d\~[0xf7][0xf8][0x90][0xa2][0xfb][0xfc]W[0x8f][0xa4]O=[0x9f][0xdc]\,[0xd7][0x9e]q[0xef]>[0xb9]&[0xe7][0xde]___8[0xd6][0xb0][0xbe][0xe0][0xde]9[0xe5]l-[0x9e]\[0xde]'[0x99][0xfb]z[0xf9][0x9f]7[0x90][0xf3]E=[0xb1][0xee]8[0xc8][\n]"
-2021-10-07 16:47:52 DEBUG wire:87 -  << "[0xe4]-di[0x18][0xa9]XU#[\r]![0xef] [0xdf][0xc9][0xac]e[0xb1]P[0xa8][0x17][0xc8]<d[0x9f]\c6[0xca][0x9d]7A~[0x83],[0xc4][0x91]RQc1#[0xc8]?![0xa7][0xb6][0xad]VIxi=[0xc8][0xbf] [0xd7][0xa1]*>[0xe6]d[0xcd][0xd1][0x87][0xfd][0x86][0xfc][0xd1][0x93]~[0xca]k[0x83][0x8e][0xcf][0xe9][0xcd][0xf][0xc8]z[0xa9]_[0xbb][0xc8]k[0x9a][0x2]2R#[0xb4]8[0x1d][0x89]ui[0xe1][0xf0][\r]R[0x13]n[0xbe]/[0xfa][0x99]A[0xe1][0xbb]7H[0xed]x[0xb4][0xfc],p[0x85][0xf9][0x4][0x87]#5[0xd5][0x90][0x82][0xd6][0xf3]O}[0x9][0x19][0xa9]in;[0x84]js[0xf7][0x6][0xc8]HM[0x11]S[0x96]T[0xec]<[0xa0]g#5[0xa9][0xd5][0x87][0xf5][0xd1][0xb8]l[0x86]i[0xa4]&w[0xd7]h([0xcb]0 [0x90][0x91]ZS[0x88][0x87]Y[0xbc]6[0xae][0xf9][0xcc][[0xa4][0xc6][0xca][0xdc]b[0xb3]Q[0x1e][0x1a][0xc8]H-[0xcb]oN[0x13][0x87][0xb3]|[0x86][0x8c][0xd4][0x1c][0x93]$[0xfa]HhmAFj[0xe9]-[0xab][0x8f][0xc9]%b[0xb0][0xe][[0xa4][0xe6][0xc7][0xe7]"5T[0xed]|[0x87]i[0xa4]f7[0x9a]|'[0xfb][0xd5][0xec]!#5[0xfb][0x91][0xaa]Qj[0x90][0x0][0xd6]a[0x8b]X[0xcc][0xb9][0xce][3[0xf2]z[\r][0xa6][0x11][0xcb]zYk:[0x17][0xb2][0x4][0x8b][0xbc]C,[0xd7]t[0x8d][0xfc][0xc5]q[0xae][0xc6]sz[0x87]X[0xa4]r[0xcc][0x9c][0xb3][0xe9][0xe7])d[0xc4][0x92][0x88][0xcb][0xd9]R[0x1e]9[0xb] #[0x96][0xd8]s[0x9b][0xa0]3i[0x0][0xaf][0xb6]C,[0xf4][0x16]UEE&[0x9d][0xc1]4bY[0x94]u[0xca]:z[0x8b]a[0x1d]v[0x88]E[0x8b][0xb5])88[0xfb][0x1a][0xbd][0x1a]Z[0xa6][0x86][0x1d][0xd3][0xb6]"[0xc5][0xb0][0x87][0xc3][0x91]Z[0xd7][0x91]Jm&[0xaf]BFj[0xcc][0xd4][0xda]"[0xb6][0xf4]v}f[0x1e][0xa9][0xdd][0xba]*2EWP[0x1d][0xc8]H[0xcd][0xd0]l[0xe7]$[0xba][0xd2][0x0][0x97][0x88]Gj[0xab][0xb6]d[0x1f]TrK[0xf8]%<R[0xb3][0xc4][0xce][0x16]r2[0x1f][0x12]8[0x1c][0xa9]Y[0xa1][0xc0][0x4]#[0xca][0x8][0xfc]1[0x1e][0xa9][0xd1][0xc6][0xa5][0xe6]1[0xf5]{[0x1f][0xa6][0x91][0xda]l[0xba][0x8b][0x1f]z[0xa9][0x2][0xb7][0x84]GjcqZ[0x83][0x3][0xcd][0x1e][0xb0][0xc8]<R[0x13][0x89][0x1e]/c~k[0xe1][0xfa][0xf3]H[0xed][0xfb][0x6][0x1a][0xfa][0xe3]{[0xdd][0xe8][0xf3][0xd9]oH[0xcd][0xcc][0xa3]0[0xcd][0xec]:[0x2][0xf3]7[0xa4]V)[0xda]4$u9[0xc0]4R3[0xb2][0xc9][0x8e][0xb2][0xc4]:J[0xdc][0xd7][0xdf][0xaf][0xc0]$[0xa2]Z9[0x6][0x0][0x0]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "0[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:52 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2021-10-07 16:47:52 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1829184b
-2021-10-07 16:47:52 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2021-10-07 16:47:52 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.unisender.com:443
-2021-10-07 16:47:52 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.unisender.com:443
-2021-10-07 16:47:52 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2021-10-07 16:47:52 DEBUG RequestAuthCache:77 - Auth cache not set in the context
-2021-10-07 16:47:52 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2021-10-07 16:47:52 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2021-10-07 16:47:52 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
-2021-10-07 16:47:52 DEBUG DefaultClientConnection:274 - Sending request: POST /ru/api/subscribe?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json&double_optin=3&fields%5Bemail%5D=ryzhik.sasha%40list.ru&list_ids=11 HTTP/1.1
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "POST /ru/api/subscribe?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json&double_optin=3&fields%5Bemail%5D=ryzhik.sasha%40list.ru&list_ids=11 HTTP/1.1[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "Content-Length: 0[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "Host: api.unisender.com[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2021-10-07 16:47:52 DEBUG wire:73 -  >> "[\r][\n]"
-2021-10-07 16:47:52 DEBUG headers:278 - >> POST /ru/api/subscribe?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json&double_optin=3&fields%5Bemail%5D=ryzhik.sasha%40list.ru&list_ids=11 HTTP/1.1
-2021-10-07 16:47:52 DEBUG headers:281 - >> Content-Type: application/json
-2021-10-07 16:47:52 DEBUG headers:281 - >> Accept: */*
-2021-10-07 16:47:52 DEBUG headers:281 - >> Content-Length: 0
-2021-10-07 16:47:52 DEBUG headers:281 - >> Host: api.unisender.com
-2021-10-07 16:47:52 DEBUG headers:281 - >> Connection: Keep-Alive
-2021-10-07 16:47:52 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2021-10-07 16:47:52 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
-2021-10-07 16:47:53 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "server: nginx[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "date: Thu, 07 Oct 2021 13:47:53 GMT[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "content-type: application/json; charset=utf-8[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "transfer-encoding: chunked[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "set-cookie: US_SESSID=9ba30d5ec38a95b818ea28f8a3b50919; path=/; secure; HttpOnly; SameSite=lax[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "expires: Thu, 07 Oct 2021 13:47:53 GMT[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "last-modified: Thu, 07 Oct 2021 13:47:53 GMT[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "pragma: no-cache[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "x-username: ryzhik.sasha@list.ru[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "x-userid: 4594492[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "x-session-id: 9ba30d5ec38a95b818ea28f8a3b50919[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "cache-control: max-age=0, must-revalidate, private[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "content-encoding: gzip[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:53 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2021-10-07 16:47:53 DEBUG headers:262 - << HTTP/1.1 200 OK
-2021-10-07 16:47:53 DEBUG headers:265 - << server: nginx
-2021-10-07 16:47:53 DEBUG headers:265 - << date: Thu, 07 Oct 2021 13:47:53 GMT
-2021-10-07 16:47:53 DEBUG headers:265 - << content-type: application/json; charset=utf-8
-2021-10-07 16:47:53 DEBUG headers:265 - << transfer-encoding: chunked
-2021-10-07 16:47:53 DEBUG headers:265 - << set-cookie: US_SESSID=9ba30d5ec38a95b818ea28f8a3b50919; path=/; secure; HttpOnly; SameSite=lax
-2021-10-07 16:47:53 DEBUG headers:265 - << expires: Thu, 07 Oct 2021 13:47:53 GMT
-2021-10-07 16:47:53 DEBUG headers:265 - << last-modified: Thu, 07 Oct 2021 13:47:53 GMT
-2021-10-07 16:47:53 DEBUG headers:265 - << pragma: no-cache
-2021-10-07 16:47:53 DEBUG headers:265 - << x-username: ryzhik.sasha@list.ru
-2021-10-07 16:47:53 DEBUG headers:265 - << x-userid: 4594492
-2021-10-07 16:47:53 DEBUG headers:265 - << x-session-id: 9ba30d5ec38a95b818ea28f8a3b50919
-2021-10-07 16:47:53 DEBUG headers:265 - << cache-control: max-age=0, must-revalidate, private
-2021-10-07 16:47:53 DEBUG headers:265 - << content-encoding: gzip
-2021-10-07 16:47:53 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
-2021-10-07 16:47:53 DEBUG headers:265 - << x-powered-by: Unisender
-2021-10-07 16:47:53 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2021-10-07 16:47:53 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
-2021-10-07 16:47:53 DEBUG wire:73 -  << "2E[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab]V*J-.[0xcd])Q[0xb2][0xaa]V*H-*[0xce][0xcf][0x8b][0xcf]LQ[0xb2]2[0xac][0xad][0x5][0x0]x[0xb9]R[0x91][0x1a][0x0][0x0][0x0]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "0[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:53 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2021-10-07 16:47:53 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7271ee48
-2021-10-07 16:47:53 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2021-10-07 16:47:53 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:53749<->195.13.245.200:443 closed
-2021-10-07 16:47:53 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:53751<->195.13.245.200:443 closed
-2021-10-07 16:47:53 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:59459<->195.13.245.200:443 closed
-2021-10-07 16:47:53 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:53752<->195.13.245.200:443 closed
-2021-10-07 16:47:53 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:59457<->195.13.245.200:443 closed
-2021-10-07 16:47:53 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.unisender.com:443
-2021-10-07 16:47:53 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.unisender.com:443
-2021-10-07 16:47:53 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2021-10-07 16:47:53 DEBUG RequestAuthCache:77 - Auth cache not set in the context
-2021-10-07 16:47:53 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2021-10-07 16:47:53 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2021-10-07 16:47:53 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
-2021-10-07 16:47:53 DEBUG DefaultClientConnection:274 - Sending request: POST /ru/api/exclude?contact_type=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&contact=test%40example.org&format=json HTTP/1.1
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "POST /ru/api/exclude?contact_type=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&contact=test%40example.org&format=json HTTP/1.1[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Content-Length: 0[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Host: api.unisender.com[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "[\r][\n]"
-2021-10-07 16:47:53 DEBUG headers:278 - >> POST /ru/api/exclude?contact_type=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&contact=test%40example.org&format=json HTTP/1.1
-2021-10-07 16:47:53 DEBUG headers:281 - >> Content-Type: application/json
-2021-10-07 16:47:53 DEBUG headers:281 - >> Accept: */*
-2021-10-07 16:47:53 DEBUG headers:281 - >> Content-Length: 0
-2021-10-07 16:47:53 DEBUG headers:281 - >> Host: api.unisender.com
-2021-10-07 16:47:53 DEBUG headers:281 - >> Connection: Keep-Alive
-2021-10-07 16:47:53 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2021-10-07 16:47:53 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
-2021-10-07 16:47:53 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "server: nginx[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "date: Thu, 07 Oct 2021 13:47:53 GMT[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "content-type: application/json; charset=utf-8[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "transfer-encoding: chunked[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "set-cookie: US_SESSID=14ea2be766951cfee097b230330a9f87; path=/; secure; HttpOnly; SameSite=lax[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "expires: Thu, 07 Oct 2021 13:47:53 GMT[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "last-modified: Thu, 07 Oct 2021 13:47:53 GMT[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "pragma: no-cache[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "x-username: ryzhik.sasha@list.ru[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "x-userid: 4594492[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "x-session-id: 14ea2be766951cfee097b230330a9f87[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "cache-control: max-age=0, must-revalidate, private[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "content-encoding: gzip[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:53 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2021-10-07 16:47:53 DEBUG headers:262 - << HTTP/1.1 200 OK
-2021-10-07 16:47:53 DEBUG headers:265 - << server: nginx
-2021-10-07 16:47:53 DEBUG headers:265 - << date: Thu, 07 Oct 2021 13:47:53 GMT
-2021-10-07 16:47:53 DEBUG headers:265 - << content-type: application/json; charset=utf-8
-2021-10-07 16:47:53 DEBUG headers:265 - << transfer-encoding: chunked
-2021-10-07 16:47:53 DEBUG headers:265 - << set-cookie: US_SESSID=14ea2be766951cfee097b230330a9f87; path=/; secure; HttpOnly; SameSite=lax
-2021-10-07 16:47:53 DEBUG headers:265 - << expires: Thu, 07 Oct 2021 13:47:53 GMT
-2021-10-07 16:47:53 DEBUG headers:265 - << last-modified: Thu, 07 Oct 2021 13:47:53 GMT
-2021-10-07 16:47:53 DEBUG headers:265 - << pragma: no-cache
-2021-10-07 16:47:53 DEBUG headers:265 - << x-username: ryzhik.sasha@list.ru
-2021-10-07 16:47:53 DEBUG headers:265 - << x-userid: 4594492
-2021-10-07 16:47:53 DEBUG headers:265 - << x-session-id: 14ea2be766951cfee097b230330a9f87
-2021-10-07 16:47:53 DEBUG headers:265 - << cache-control: max-age=0, must-revalidate, private
-2021-10-07 16:47:53 DEBUG headers:265 - << content-encoding: gzip
-2021-10-07 16:47:53 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
-2021-10-07 16:47:53 DEBUG headers:265 - << x-powered-by: Unisender
-2021-10-07 16:47:53 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2021-10-07 16:47:53 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
-2021-10-07 16:47:53 DEBUG wire:73 -  << "21[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab]V*J-.[0xcd])Q[0xb2][0xaa][0xae][0xad][0x5][0x0]L[0x4][0xee][0xe][\r][0x0][0x0][0x0]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "0[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:53 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2021-10-07 16:47:53 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1a183473
-2021-10-07 16:47:53 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2021-10-07 16:47:53 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.unisender.com:443
-2021-10-07 16:47:53 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.unisender.com:443
-2021-10-07 16:47:53 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:59461<->195.13.245.200:443 closed
-2021-10-07 16:47:53 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2021-10-07 16:47:53 DEBUG RequestAuthCache:77 - Auth cache not set in the context
-2021-10-07 16:47:53 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2021-10-07 16:47:53 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2021-10-07 16:47:53 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
-2021-10-07 16:47:53 DEBUG DefaultClientConnection:274 - Sending request: POST /ru/api/unsubscribe?contact_type=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&contact=ryzhik.sasha%40list.ru&format=json HTTP/1.1
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "POST /ru/api/unsubscribe?contact_type=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&contact=ryzhik.sasha%40list.ru&format=json HTTP/1.1[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Content-Length: 0[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Host: api.unisender.com[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "[\r][\n]"
-2021-10-07 16:47:53 DEBUG headers:278 - >> POST /ru/api/unsubscribe?contact_type=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&contact=ryzhik.sasha%40list.ru&format=json HTTP/1.1
-2021-10-07 16:47:53 DEBUG headers:281 - >> Content-Type: application/json
-2021-10-07 16:47:53 DEBUG headers:281 - >> Accept: */*
-2021-10-07 16:47:53 DEBUG headers:281 - >> Content-Length: 0
-2021-10-07 16:47:53 DEBUG headers:281 - >> Host: api.unisender.com
-2021-10-07 16:47:53 DEBUG headers:281 - >> Connection: Keep-Alive
-2021-10-07 16:47:53 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2021-10-07 16:47:53 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
-2021-10-07 16:47:53 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "server: nginx[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "date: Thu, 07 Oct 2021 13:47:54 GMT[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "content-type: application/json; charset=utf-8[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "transfer-encoding: chunked[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "set-cookie: US_SESSID=f472a368ff89ad0684e41730f40e6857; path=/; secure; HttpOnly; SameSite=lax[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "expires: Thu, 07 Oct 2021 13:47:54 GMT[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "last-modified: Thu, 07 Oct 2021 13:47:54 GMT[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "pragma: no-cache[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "x-username: ryzhik.sasha@list.ru[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "x-userid: 4594492[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "x-session-id: f472a368ff89ad0684e41730f40e6857[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "cache-control: max-age=0, must-revalidate, private[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "content-encoding: gzip[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:53 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2021-10-07 16:47:53 DEBUG headers:262 - << HTTP/1.1 200 OK
-2021-10-07 16:47:53 DEBUG headers:265 - << server: nginx
-2021-10-07 16:47:53 DEBUG headers:265 - << date: Thu, 07 Oct 2021 13:47:54 GMT
-2021-10-07 16:47:53 DEBUG headers:265 - << content-type: application/json; charset=utf-8
-2021-10-07 16:47:53 DEBUG headers:265 - << transfer-encoding: chunked
-2021-10-07 16:47:53 DEBUG headers:265 - << set-cookie: US_SESSID=f472a368ff89ad0684e41730f40e6857; path=/; secure; HttpOnly; SameSite=lax
-2021-10-07 16:47:53 DEBUG headers:265 - << expires: Thu, 07 Oct 2021 13:47:54 GMT
-2021-10-07 16:47:53 DEBUG headers:265 - << last-modified: Thu, 07 Oct 2021 13:47:54 GMT
-2021-10-07 16:47:53 DEBUG headers:265 - << pragma: no-cache
-2021-10-07 16:47:53 DEBUG headers:265 - << x-username: ryzhik.sasha@list.ru
-2021-10-07 16:47:53 DEBUG headers:265 - << x-userid: 4594492
-2021-10-07 16:47:53 DEBUG headers:265 - << x-session-id: f472a368ff89ad0684e41730f40e6857
-2021-10-07 16:47:53 DEBUG headers:265 - << cache-control: max-age=0, must-revalidate, private
-2021-10-07 16:47:53 DEBUG headers:265 - << content-encoding: gzip
-2021-10-07 16:47:53 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
-2021-10-07 16:47:53 DEBUG headers:265 - << x-powered-by: Unisender
-2021-10-07 16:47:53 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2021-10-07 16:47:53 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
-2021-10-07 16:47:53 DEBUG wire:73 -  << "21[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab]V*J-.[0xcd])Q[0xb2][0xaa][0xae][0xad][0x5][0x0]L[0x4][0xee][0xe][\r][0x0][0x0][0x0]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "0[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:53 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2021-10-07 16:47:53 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@f60910d
-2021-10-07 16:47:53 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
-2021-10-07 16:47:53 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.unisender.com:443
-2021-10-07 16:47:53 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.unisender.com:443
-2021-10-07 16:47:53 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
-2021-10-07 16:47:53 DEBUG RequestAuthCache:77 - Auth cache not set in the context
-2021-10-07 16:47:53 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
-2021-10-07 16:47:53 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
-2021-10-07 16:47:53 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
-2021-10-07 16:47:53 DEBUG DefaultClientConnection:274 - Sending request: POST /ru/api/importContacts?field_names%5B0%5D=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&data%5B0%5D%5B0%5D=ryzhik.sasha%40list.ru&format=json&data%5BN%5D%5B0%5D=wxFGj%40list.ru HTTP/1.1
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "POST /ru/api/importContacts?field_names%5B0%5D=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&data%5B0%5D%5B0%5D=ryzhik.sasha%40list.ru&format=json&data%5BN%5D%5B0%5D=wxFGj%40list.ru HTTP/1.1[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Content-Length: 0[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Host: api.unisender.com[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2021-10-07 16:47:53 DEBUG wire:73 -  >> "[\r][\n]"
-2021-10-07 16:47:53 DEBUG headers:278 - >> POST /ru/api/importContacts?field_names%5B0%5D=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&data%5B0%5D%5B0%5D=ryzhik.sasha%40list.ru&format=json&data%5BN%5D%5B0%5D=wxFGj%40list.ru HTTP/1.1
-2021-10-07 16:47:53 DEBUG headers:281 - >> Content-Type: application/json
-2021-10-07 16:47:53 DEBUG headers:281 - >> Accept: */*
-2021-10-07 16:47:53 DEBUG headers:281 - >> Content-Length: 0
-2021-10-07 16:47:53 DEBUG headers:281 - >> Host: api.unisender.com
-2021-10-07 16:47:53 DEBUG headers:281 - >> Connection: Keep-Alive
-2021-10-07 16:47:53 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
-2021-10-07 16:47:53 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
-2021-10-07 16:47:54 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "server: nginx[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "date: Thu, 07 Oct 2021 13:47:54 GMT[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "content-type: application/json; charset=utf-8[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "transfer-encoding: chunked[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "set-cookie: US_SESSID=120ffd3a8e4055c1beba896b6e546e8f; path=/; secure; HttpOnly; SameSite=lax[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "expires: Thu, 07 Oct 2021 13:47:54 GMT[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "last-modified: Thu, 07 Oct 2021 13:47:54 GMT[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "pragma: no-cache[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "x-username: ryzhik.sasha@list.ru[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "x-userid: 4594492[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "x-session-id: 120ffd3a8e4055c1beba896b6e546e8f[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "cache-control: max-age=0, must-revalidate, private[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "content-encoding: gzip[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:54 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
-2021-10-07 16:47:54 DEBUG headers:262 - << HTTP/1.1 200 OK
-2021-10-07 16:47:54 DEBUG headers:265 - << server: nginx
-2021-10-07 16:47:54 DEBUG headers:265 - << date: Thu, 07 Oct 2021 13:47:54 GMT
-2021-10-07 16:47:54 DEBUG headers:265 - << content-type: application/json; charset=utf-8
-2021-10-07 16:47:54 DEBUG headers:265 - << transfer-encoding: chunked
-2021-10-07 16:47:54 DEBUG headers:265 - << set-cookie: US_SESSID=120ffd3a8e4055c1beba896b6e546e8f; path=/; secure; HttpOnly; SameSite=lax
-2021-10-07 16:47:54 DEBUG headers:265 - << expires: Thu, 07 Oct 2021 13:47:54 GMT
-2021-10-07 16:47:54 DEBUG headers:265 - << last-modified: Thu, 07 Oct 2021 13:47:54 GMT
-2021-10-07 16:47:54 DEBUG headers:265 - << pragma: no-cache
-2021-10-07 16:47:54 DEBUG headers:265 - << x-username: ryzhik.sasha@list.ru
-2021-10-07 16:47:54 DEBUG headers:265 - << x-userid: 4594492
-2021-10-07 16:47:54 DEBUG headers:265 - << x-session-id: 120ffd3a8e4055c1beba896b6e546e8f
-2021-10-07 16:47:54 DEBUG headers:265 - << cache-control: max-age=0, must-revalidate, private
-2021-10-07 16:47:54 DEBUG headers:265 - << content-encoding: gzip
-2021-10-07 16:47:54 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
-2021-10-07 16:47:54 DEBUG headers:265 - << x-powered-by: Unisender
-2021-10-07 16:47:54 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
-2021-10-07 16:47:54 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
-2021-10-07 16:47:54 DEBUG wire:73 -  << "61[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]5[0x8b][0xc1][\n]"
-2021-10-07 16:47:54 DEBUG wire:87 -  << "[0x80] [0x10][0x5][0xff][0xe5][0x9d]=T[0xc7][0xfd][0x95][0x88]Xp[0x9]a[0xd3][0xd0][0xb5][0xe][0xe2][0xbf][0x7]F[0xb7]a[0x98]i[0xc8]R[0xaa][0x1a][0xa8][0xc1][0x92][0xb1][0x82][0x16][0x87][0x10][0x8b]d[0x13][0xf][0x9a][0x1c][0xea][0xe5]y[0xf0][0xec][0xe0]E[0xe5][0xf7]Q[0x9e]]N[0xe]ZF[0x16][0xe2][0xcd][0x1a][0xbe]E[0xd3][0x1]Z[0xb7][0xde]_[0x8][0xe1][0xdf]Z_[0x0][0x0][0x0]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "0[\r][\n]"
-2021-10-07 16:47:54 DEBUG wire:73 -  << "[\r][\n]"
-2021-10-07 16:47:54 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2021-10-07 16:47:54 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@52d48643
-2021-10-07 16:47:54 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2021-10-08 10:37:53 DEBUG AuthPage:19 - Auth button has been clicked
+2021-10-08 10:37:54 DEBUG AuthPage:26 - Button 'Auth' has been clicked
+2021-10-08 10:37:54 DEBUG SingInPage:23 - Name: Sasha has been inputted
+2021-10-08 10:37:55 DEBUG SingInPage:30 - Login: tests@list.ru has been inputted
+2021-10-08 10:37:55 DEBUG SingInPage:37 - Password: Password!1 has been inputted
+2021-10-08 10:37:55 DEBUG SingInPage:44 - ConfirmPassword: Password!1 has been inputted
+2021-10-08 10:37:56 DEBUG SingInPage:51 - Button 'Submit' has been clicked
+2021-10-08 10:37:56 DEBUG SingInPage:58 - Auth message has been visible
+2021-10-08 10:37:58 DEBUG MainDeliveryPage:19 - Button 'Каталог' has been selected
+2021-10-08 10:38:00 DEBUG MainDeliveryPage:26 - Link 'Изотоники' has been clicked
+2021-10-08 10:38:00 DEBUG MainDeliveryPage:33 - Item has been clicked in catalog 'Изотоники'
+2021-10-08 10:38:01 DEBUG ItemDeliveryPage:19 - Number of items  has been increased
+2021-10-08 10:38:01 DEBUG ItemDeliveryPage:26 - Button 'В корзину'  has been clicked
+2021-10-08 10:38:03 DEBUG ItemDeliveryPage:33 - Cart button has been clicked
+2021-10-08 10:38:04 DEBUG CartDeliveryPage:17 - Button 'Оформить заказ' has been inputted
+2021-10-08 21:35:19 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.unisender.com:443
+2021-10-08 21:35:19 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.unisender.com:443
+2021-10-08 21:35:19 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2021-10-08 21:35:19 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-10-08 21:35:19 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2021-10-08 21:35:19 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2021-10-08 21:35:19 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2021-10-08 21:35:19 DEBUG DefaultClientConnection:274 - Sending request: GET /ru/api/getLists?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json HTTP/1.1
+2021-10-08 21:35:19 DEBUG wire:73 -  >> "GET /ru/api/getLists?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json HTTP/1.1[\r][\n]"
+2021-10-08 21:35:19 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2021-10-08 21:35:19 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2021-10-08 21:35:19 DEBUG wire:73 -  >> "Host: api.unisender.com[\r][\n]"
+2021-10-08 21:35:19 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2021-10-08 21:35:19 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
+2021-10-08 21:35:19 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-10-08 21:35:19 DEBUG wire:73 -  >> "[\r][\n]"
+2021-10-08 21:35:19 DEBUG headers:278 - >> GET /ru/api/getLists?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json HTTP/1.1
+2021-10-08 21:35:19 DEBUG headers:281 - >> Content-Type: application/json
+2021-10-08 21:35:19 DEBUG headers:281 - >> Accept: */*
+2021-10-08 21:35:19 DEBUG headers:281 - >> Host: api.unisender.com
+2021-10-08 21:35:19 DEBUG headers:281 - >> Connection: Keep-Alive
+2021-10-08 21:35:19 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+2021-10-08 21:35:19 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2021-10-08 21:35:20 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "server: nginx[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "date: Fri, 08 Oct 2021 18:35:21 GMT[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "content-type: application/json; charset=utf-8[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "transfer-encoding: chunked[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "set-cookie: US_SESSID=23d711fca5b6089f09d02a955f1b9f4c; path=/; secure; HttpOnly; SameSite=lax[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "expires: Fri, 08 Oct 2021 18:35:21 GMT[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "last-modified: Fri, 08 Oct 2021 18:35:21 GMT[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "pragma: no-cache[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "x-username: ryzhik.sasha@list.ru[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "x-userid: 4594492[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "x-session-id: 23d711fca5b6089f09d02a955f1b9f4c[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "cache-control: max-age=0, must-revalidate, private[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "content-encoding: gzip[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "[\r][\n]"
+2021-10-08 21:35:20 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2021-10-08 21:35:20 DEBUG headers:262 - << HTTP/1.1 200 OK
+2021-10-08 21:35:20 DEBUG headers:265 - << server: nginx
+2021-10-08 21:35:20 DEBUG headers:265 - << date: Fri, 08 Oct 2021 18:35:21 GMT
+2021-10-08 21:35:20 DEBUG headers:265 - << content-type: application/json; charset=utf-8
+2021-10-08 21:35:20 DEBUG headers:265 - << transfer-encoding: chunked
+2021-10-08 21:35:20 DEBUG headers:265 - << set-cookie: US_SESSID=23d711fca5b6089f09d02a955f1b9f4c; path=/; secure; HttpOnly; SameSite=lax
+2021-10-08 21:35:20 DEBUG headers:265 - << expires: Fri, 08 Oct 2021 18:35:21 GMT
+2021-10-08 21:35:20 DEBUG headers:265 - << last-modified: Fri, 08 Oct 2021 18:35:21 GMT
+2021-10-08 21:35:20 DEBUG headers:265 - << pragma: no-cache
+2021-10-08 21:35:20 DEBUG headers:265 - << x-username: ryzhik.sasha@list.ru
+2021-10-08 21:35:20 DEBUG headers:265 - << x-userid: 4594492
+2021-10-08 21:35:20 DEBUG headers:265 - << x-session-id: 23d711fca5b6089f09d02a955f1b9f4c
+2021-10-08 21:35:20 DEBUG headers:265 - << cache-control: max-age=0, must-revalidate, private
+2021-10-08 21:35:20 DEBUG headers:265 - << content-encoding: gzip
+2021-10-08 21:35:20 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
+2021-10-08 21:35:20 DEBUG headers:265 - << x-powered-by: Unisender
+2021-10-08 21:35:20 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2021-10-08 21:35:20 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2021-10-08 21:35:20 DEBUG wire:73 -  << "2FA[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]M[0xd4][0xc9][0x96][0xa2]H[0x14][0x80][0xe1]wq][0x8b][0xae]L5[0xbb]s[0xc7] 3$B[0x0][0x81]}z[0xc1]<[0x86]L![0xa2]u[0xea][0xdd]+[0x17]}[0xbc]w[0xfd][0x9f][0x1b][0xe0][0xc7][\r][0xed][0xe6]b[0xb9][0xf5]|[0xf7][0xf9][0xef][0xaf]][0x93][0xef]>[0xfe][0xfc][0xb1][0xe3][\r][0xef][0x8b][0xdd][0xe7][0xee]t1[0x17]W.[0xef][0x93][0xbc][0xfb][0xfd][0xe3][0xff][0xfc][0x6]9_[0x14][0x9f]w[0xde] [0x9f] [0xbf]C[0x96][0x86][0x91][0x89]U5[0xb2][0x8][0xf2][0x1e][0xf2][0x9d][0xcc]j[0x16][0xb][0x85]r[0x85]|[0x80][0x1c][0x90][[0xcc]G[0xb9]s'[0xc8]G[0xc8]BLO[0x15][0xd3][0x17][0x83]B[0xfe][0x80][0x9c]Z[0x96]R%[0xd1][0xb5]u![0xff][\r][0xb9][0x8e][0x14][0xf1]9'[[0x8e]~[0xd8]?[0x90][0x1f]=[0xe9][0xa7][0xbc][0xd6][0xd9][0xf8][0x9a]~[0xfb][0xb][0xb2]Vj[0xb7][0x8e][0xba]MS@Fj[0x84][0x15][0xbe]G[0xcc]k[0xb][0x87][0xbf]!5a[\r][0x2]1[0xc8]t[0x6][0xbf][0xfb][\r][0xa9]y[0x9e][0x19]d[0xa1]#[0xcc]>[0x1c][0x8e][0xd4][0x14]][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "[7[0xf0][0xfb][0x12]2RS[0x9d]v[0x88][0x94][0xe6][0xee][0xe][0x90][0x91][0xda]ILyR[0xf1][0xcb][0x80][0x9e][0x8d][0xd4][0xa4]V[0x1b][0xb6]g[0xe3][0xf0][0x19][0xa6][0x91][0x9a][0xdc][0xdd][0xe8]P[0x96]QH #[0xb5][0xa6][0x10][0xcf][0xb3]xk[0x1c][0xe3][0x95][0xdf][0x91][0x1a]/s[0x93][0xcf]zyn #[0xb5],_[0xed]&[0x8e]f[0xf9][0x2][0x19][0xa9][0xd9][0x6]I[0xb4][0x91][0xb0][0xda][0x84][0x8c][0xd4][0xd2]5[0xab][0xbd][0xe4]J9[0xac][0xc3];R[0xb][0xe2]K[0x91][0xea][0x8a]z[0xb9][0xc3]4R[0xb3][0x1a]U[0xbe][0x93][0xaf][0xcd][0xe8]!#5[0xeb][0x99]*4[0xd5]I[0x8][0xeb][0xf0][0x8e]X[0x8c][0xb9][0xce][[0x83][0xba][0xbd][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "[0xd3][0x88]e[0xbb]n5[0x9b][0xb]Y[0x82]E[0xde]#[0x96][[0xba][0xd1]`[0xb1][0xed][0x9b][0xfe][0x9a][0xde]#[0x16][0xa9][0x1c]3[0xfb]b[0x4]y[\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "[0x19][0xb1]$[0xe2]r1O[0xcf][0x9c][0x87][0x90][0x11]K[0xec]:M[0xd8][0x19],[0x84]W[0xdb]#[0x16][0xb6][0xd2][0xaa][0xa8][0xc8][0xa4]q[0x98]F,[0xcb]i[0x9b][0xb2][0x8e][0xad]1[0xac][0xc3][0x1e][0xb1][0xa8][0xb1]:[0x85]g[0xfb][0xab]F[0xaf][0x86][0x96][0xa9][0xe1]^[0xda]V[0xa4][0x18][0xbe][0xe0]p[0xa4][0xd6]u[0xa4]R[0x9a])[0xf8]R #5n[0xa8]m[0x11][0x9b]Z[0xbb][0xbd][0xf2][0x1][0xa9][0xad]]E[\r][0xd1][0x11][0x14][0x1b]2R[0xd3]U[0xcb][0xf6]EG[0x1a][0xe0][0x12][0x1d][0x90][0xda][0xa6].[0xd9][0x83]IN[0x9][0x9f][0xe4][0x80][0xd4]L[0xb1][0xb3][0x84][0x9c][0xcc][0xe7][0x4][0xe]Gjf$pA[0xa7][0x19][0x81]/v@j[0xac]q[0x98][0xe1][0xa5]A[0x1f][0xc0]4R[0x9b][\r]g[0x9]"7=[0xc1]-9 [0xb5][0xb1][0xf0][0xb7][0xf0][0xcc][0xb2]',[0xf2][0x1][0xa9][0x89]D[0x8b][0x97]1_[[0xb8][0xfe][0x7][0xa4][0xf6]}[0x3]u[0xed][0xf9][0xbd]n[0xec][0xf5][0xec]#R3r[0x1a][0xa5][0x99]US0?"[0xb5][0xea][0xa4]NCR[0x97][0xf3][0x3][0xa6][0x91][0x9a][0x9e]M[0x16][0xcd][0x12][0xd3][0x93] #5[0x9d];[0xcf][0xd6][0xf4][0xe2][\n]"
+2021-10-08 21:35:20 DEBUG wire:87 -  << "[0xbe][0xd8][0x11][0xa9][0xa9][0xe5]Tg[0x17]Sk[0x16][0x98]Fjg[0xab][0xf1][0x14][0x1e][0xaf]6,[0xf2][0x11][0xa9][0xe5][0xbe]\*[0xd9][0xb5][0x14][0x4][0x98]Fj[0x8f]6[0xe9][0xcb][0xd9][0x93][0xf2][0xc]2R[0xf3]Y[0x1c][0x1a],[0xa6]t[0x85][0x8c][0xff][0xb8]rR[0x4]m*Xp[\r]>[0xf0][\r][0xa5][0x8f])[0xca][0xa6][0x81][0x80][0xda][0x7]R[0x8b][0xc5]-[0x1f][0xfd][0xa0][0x8c][0xaa][0xd7][0xe1][0x1f]H[0xed][0xec][0x1a][0xaa]>,l[0xf9][0xde][0xd4][0xff]~[0xff][0x1][0xb0]y[0xc]"o[0x7][0x0][0x0]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "0[\r][\n]"
+2021-10-08 21:35:20 DEBUG wire:73 -  << "[\r][\n]"
+2021-10-08 21:35:20 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2021-10-08 21:35:20 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6c0905f6
+2021-10-08 21:35:20 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2021-10-08 21:35:21 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:51200<->195.13.237.72:443 closed
+2021-10-08 21:35:21 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.unisender.com:443
+2021-10-08 21:35:21 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.unisender.com:443
+2021-10-08 21:35:22 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2021-10-08 21:35:22 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-10-08 21:35:22 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2021-10-08 21:35:22 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2021-10-08 21:35:22 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2021-10-08 21:35:22 DEBUG DefaultClientConnection:274 - Sending request: POST /ru/api/subscribe?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json&double_optin=3&fields%5Bemail%5D=ryzhik.sasha%40list.ru&list_ids=11 HTTP/1.1
+2021-10-08 21:35:22 DEBUG wire:73 -  >> "POST /ru/api/subscribe?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json&double_optin=3&fields%5Bemail%5D=ryzhik.sasha%40list.ru&list_ids=11 HTTP/1.1[\r][\n]"
+2021-10-08 21:35:22 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2021-10-08 21:35:22 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2021-10-08 21:35:22 DEBUG wire:73 -  >> "Content-Length: 0[\r][\n]"
+2021-10-08 21:35:22 DEBUG wire:73 -  >> "Host: api.unisender.com[\r][\n]"
+2021-10-08 21:35:22 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2021-10-08 21:35:22 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
+2021-10-08 21:35:22 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-10-08 21:35:22 DEBUG wire:73 -  >> "[\r][\n]"
+2021-10-08 21:35:22 DEBUG headers:278 - >> POST /ru/api/subscribe?api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&format=json&double_optin=3&fields%5Bemail%5D=ryzhik.sasha%40list.ru&list_ids=11 HTTP/1.1
+2021-10-08 21:35:22 DEBUG headers:281 - >> Content-Type: application/json
+2021-10-08 21:35:22 DEBUG headers:281 - >> Accept: */*
+2021-10-08 21:35:22 DEBUG headers:281 - >> Content-Length: 0
+2021-10-08 21:35:22 DEBUG headers:281 - >> Host: api.unisender.com
+2021-10-08 21:35:22 DEBUG headers:281 - >> Connection: Keep-Alive
+2021-10-08 21:35:22 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+2021-10-08 21:35:22 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2021-10-08 21:35:23 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "server: nginx[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "date: Fri, 08 Oct 2021 18:35:23 GMT[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "content-type: application/json; charset=utf-8[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "transfer-encoding: chunked[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "set-cookie: US_SESSID=48da5311f52da292d9758d4ecc2cdd73; path=/; secure; HttpOnly; SameSite=lax[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "expires: Fri, 08 Oct 2021 18:35:23 GMT[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "last-modified: Fri, 08 Oct 2021 18:35:23 GMT[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "pragma: no-cache[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "x-username: ryzhik.sasha@list.ru[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "x-userid: 4594492[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "x-session-id: 48da5311f52da292d9758d4ecc2cdd73[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "cache-control: max-age=0, must-revalidate, private[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "content-encoding: gzip[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "[\r][\n]"
+2021-10-08 21:35:23 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2021-10-08 21:35:23 DEBUG headers:262 - << HTTP/1.1 200 OK
+2021-10-08 21:35:23 DEBUG headers:265 - << server: nginx
+2021-10-08 21:35:23 DEBUG headers:265 - << date: Fri, 08 Oct 2021 18:35:23 GMT
+2021-10-08 21:35:23 DEBUG headers:265 - << content-type: application/json; charset=utf-8
+2021-10-08 21:35:23 DEBUG headers:265 - << transfer-encoding: chunked
+2021-10-08 21:35:23 DEBUG headers:265 - << set-cookie: US_SESSID=48da5311f52da292d9758d4ecc2cdd73; path=/; secure; HttpOnly; SameSite=lax
+2021-10-08 21:35:23 DEBUG headers:265 - << expires: Fri, 08 Oct 2021 18:35:23 GMT
+2021-10-08 21:35:23 DEBUG headers:265 - << last-modified: Fri, 08 Oct 2021 18:35:23 GMT
+2021-10-08 21:35:23 DEBUG headers:265 - << pragma: no-cache
+2021-10-08 21:35:23 DEBUG headers:265 - << x-username: ryzhik.sasha@list.ru
+2021-10-08 21:35:23 DEBUG headers:265 - << x-userid: 4594492
+2021-10-08 21:35:23 DEBUG headers:265 - << x-session-id: 48da5311f52da292d9758d4ecc2cdd73
+2021-10-08 21:35:23 DEBUG headers:265 - << cache-control: max-age=0, must-revalidate, private
+2021-10-08 21:35:23 DEBUG headers:265 - << content-encoding: gzip
+2021-10-08 21:35:23 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
+2021-10-08 21:35:23 DEBUG headers:265 - << x-powered-by: Unisender
+2021-10-08 21:35:23 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2021-10-08 21:35:23 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2021-10-08 21:35:23 DEBUG wire:73 -  << "2E[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab]V*J-.[0xcd])Q[0xb2][0xaa]V*H-*[0xce][0xcf][0x8b][0xcf]LQ[0xb2]2[0xac][0xad][0x5][0x0]x[0xb9]R[0x91][0x1a][0x0][0x0][0x0]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "0[\r][\n]"
+2021-10-08 21:35:23 DEBUG wire:73 -  << "[\r][\n]"
+2021-10-08 21:35:23 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2021-10-08 21:35:23 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4a89ef44
+2021-10-08 21:35:23 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2021-10-08 21:35:23 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.unisender.com:443
+2021-10-08 21:35:23 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.unisender.com:443
+2021-10-08 21:35:24 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2021-10-08 21:35:24 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-10-08 21:35:24 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2021-10-08 21:35:24 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2021-10-08 21:35:24 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2021-10-08 21:35:24 DEBUG DefaultClientConnection:274 - Sending request: POST /ru/api/exclude?contact_type=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&contact=test%40example.org&format=json HTTP/1.1
+2021-10-08 21:35:24 DEBUG wire:73 -  >> "POST /ru/api/exclude?contact_type=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&contact=test%40example.org&format=json HTTP/1.1[\r][\n]"
+2021-10-08 21:35:24 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2021-10-08 21:35:24 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2021-10-08 21:35:24 DEBUG wire:73 -  >> "Content-Length: 0[\r][\n]"
+2021-10-08 21:35:24 DEBUG wire:73 -  >> "Host: api.unisender.com[\r][\n]"
+2021-10-08 21:35:24 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2021-10-08 21:35:24 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
+2021-10-08 21:35:24 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-10-08 21:35:24 DEBUG wire:73 -  >> "[\r][\n]"
+2021-10-08 21:35:24 DEBUG headers:278 - >> POST /ru/api/exclude?contact_type=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&contact=test%40example.org&format=json HTTP/1.1
+2021-10-08 21:35:24 DEBUG headers:281 - >> Content-Type: application/json
+2021-10-08 21:35:24 DEBUG headers:281 - >> Accept: */*
+2021-10-08 21:35:24 DEBUG headers:281 - >> Content-Length: 0
+2021-10-08 21:35:24 DEBUG headers:281 - >> Host: api.unisender.com
+2021-10-08 21:35:24 DEBUG headers:281 - >> Connection: Keep-Alive
+2021-10-08 21:35:24 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+2021-10-08 21:35:24 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2021-10-08 21:35:25 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "server: nginx[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "date: Fri, 08 Oct 2021 18:35:25 GMT[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "content-type: application/json; charset=utf-8[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "transfer-encoding: chunked[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "set-cookie: US_SESSID=04f2b14a1e231c9ed877045ce03fa68a; path=/; secure; HttpOnly; SameSite=lax[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "expires: Fri, 08 Oct 2021 18:35:25 GMT[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "last-modified: Fri, 08 Oct 2021 18:35:25 GMT[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "pragma: no-cache[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "x-username: ryzhik.sasha@list.ru[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "x-userid: 4594492[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "x-session-id: 04f2b14a1e231c9ed877045ce03fa68a[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "cache-control: max-age=0, must-revalidate, private[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "content-encoding: gzip[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "[\r][\n]"
+2021-10-08 21:35:25 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2021-10-08 21:35:25 DEBUG headers:262 - << HTTP/1.1 200 OK
+2021-10-08 21:35:25 DEBUG headers:265 - << server: nginx
+2021-10-08 21:35:25 DEBUG headers:265 - << date: Fri, 08 Oct 2021 18:35:25 GMT
+2021-10-08 21:35:25 DEBUG headers:265 - << content-type: application/json; charset=utf-8
+2021-10-08 21:35:25 DEBUG headers:265 - << transfer-encoding: chunked
+2021-10-08 21:35:25 DEBUG headers:265 - << set-cookie: US_SESSID=04f2b14a1e231c9ed877045ce03fa68a; path=/; secure; HttpOnly; SameSite=lax
+2021-10-08 21:35:25 DEBUG headers:265 - << expires: Fri, 08 Oct 2021 18:35:25 GMT
+2021-10-08 21:35:25 DEBUG headers:265 - << last-modified: Fri, 08 Oct 2021 18:35:25 GMT
+2021-10-08 21:35:25 DEBUG headers:265 - << pragma: no-cache
+2021-10-08 21:35:25 DEBUG headers:265 - << x-username: ryzhik.sasha@list.ru
+2021-10-08 21:35:25 DEBUG headers:265 - << x-userid: 4594492
+2021-10-08 21:35:25 DEBUG headers:265 - << x-session-id: 04f2b14a1e231c9ed877045ce03fa68a
+2021-10-08 21:35:25 DEBUG headers:265 - << cache-control: max-age=0, must-revalidate, private
+2021-10-08 21:35:25 DEBUG headers:265 - << content-encoding: gzip
+2021-10-08 21:35:25 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
+2021-10-08 21:35:25 DEBUG headers:265 - << x-powered-by: Unisender
+2021-10-08 21:35:25 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2021-10-08 21:35:25 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2021-10-08 21:35:25 DEBUG wire:73 -  << "21[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab]V*J-.[0xcd])Q[0xb2][0xaa][0xae][0xad][0x5][0x0]L[0x4][0xee][0xe][\r][0x0][0x0][0x0]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "0[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "[\r][\n]"
+2021-10-08 21:35:25 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2021-10-08 21:35:25 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@28e8888d
+2021-10-08 21:35:25 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2021-10-08 21:35:25 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.unisender.com:443
+2021-10-08 21:35:25 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.unisender.com:443
+2021-10-08 21:35:25 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:51207<->195.13.237.72:443 closed
+2021-10-08 21:35:25 DEBUG DefaultClientConnection:180 - Connection 0.0.0.0:51203<->195.13.237.72:443 closed
+2021-10-08 21:35:25 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2021-10-08 21:35:25 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-10-08 21:35:25 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2021-10-08 21:35:25 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2021-10-08 21:35:25 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2021-10-08 21:35:25 DEBUG DefaultClientConnection:274 - Sending request: POST /ru/api/unsubscribe?contact_type=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&contact=ryzhik.sasha%40list.ru&format=json HTTP/1.1
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "POST /ru/api/unsubscribe?contact_type=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&contact=ryzhik.sasha%40list.ru&format=json HTTP/1.1[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "Content-Length: 0[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "Host: api.unisender.com[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "[\r][\n]"
+2021-10-08 21:35:25 DEBUG headers:278 - >> POST /ru/api/unsubscribe?contact_type=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&contact=ryzhik.sasha%40list.ru&format=json HTTP/1.1
+2021-10-08 21:35:25 DEBUG headers:281 - >> Content-Type: application/json
+2021-10-08 21:35:25 DEBUG headers:281 - >> Accept: */*
+2021-10-08 21:35:25 DEBUG headers:281 - >> Content-Length: 0
+2021-10-08 21:35:25 DEBUG headers:281 - >> Host: api.unisender.com
+2021-10-08 21:35:25 DEBUG headers:281 - >> Connection: Keep-Alive
+2021-10-08 21:35:25 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+2021-10-08 21:35:25 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2021-10-08 21:35:25 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "server: nginx[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "date: Fri, 08 Oct 2021 18:35:26 GMT[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "content-type: application/json; charset=utf-8[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "transfer-encoding: chunked[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "set-cookie: US_SESSID=de88b38afb8fa685dd42e1d70ba13b99; path=/; secure; HttpOnly; SameSite=lax[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "expires: Fri, 08 Oct 2021 18:35:26 GMT[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "last-modified: Fri, 08 Oct 2021 18:35:26 GMT[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "pragma: no-cache[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "x-username: ryzhik.sasha@list.ru[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "x-userid: 4594492[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "x-session-id: de88b38afb8fa685dd42e1d70ba13b99[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "cache-control: max-age=0, must-revalidate, private[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "content-encoding: gzip[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "[\r][\n]"
+2021-10-08 21:35:25 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2021-10-08 21:35:25 DEBUG headers:262 - << HTTP/1.1 200 OK
+2021-10-08 21:35:25 DEBUG headers:265 - << server: nginx
+2021-10-08 21:35:25 DEBUG headers:265 - << date: Fri, 08 Oct 2021 18:35:26 GMT
+2021-10-08 21:35:25 DEBUG headers:265 - << content-type: application/json; charset=utf-8
+2021-10-08 21:35:25 DEBUG headers:265 - << transfer-encoding: chunked
+2021-10-08 21:35:25 DEBUG headers:265 - << set-cookie: US_SESSID=de88b38afb8fa685dd42e1d70ba13b99; path=/; secure; HttpOnly; SameSite=lax
+2021-10-08 21:35:25 DEBUG headers:265 - << expires: Fri, 08 Oct 2021 18:35:26 GMT
+2021-10-08 21:35:25 DEBUG headers:265 - << last-modified: Fri, 08 Oct 2021 18:35:26 GMT
+2021-10-08 21:35:25 DEBUG headers:265 - << pragma: no-cache
+2021-10-08 21:35:25 DEBUG headers:265 - << x-username: ryzhik.sasha@list.ru
+2021-10-08 21:35:25 DEBUG headers:265 - << x-userid: 4594492
+2021-10-08 21:35:25 DEBUG headers:265 - << x-session-id: de88b38afb8fa685dd42e1d70ba13b99
+2021-10-08 21:35:25 DEBUG headers:265 - << cache-control: max-age=0, must-revalidate, private
+2021-10-08 21:35:25 DEBUG headers:265 - << content-encoding: gzip
+2021-10-08 21:35:25 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
+2021-10-08 21:35:25 DEBUG headers:265 - << x-powered-by: Unisender
+2021-10-08 21:35:25 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2021-10-08 21:35:25 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2021-10-08 21:35:25 DEBUG wire:73 -  << "21[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xab]V*J-.[0xcd])Q[0xb2][0xaa][0xae][0xad][0x5][0x0]L[0x4][0xee][0xe][\r][0x0][0x0][0x0]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "0[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "[\r][\n]"
+2021-10-08 21:35:25 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2021-10-08 21:35:25 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2dd1086
+2021-10-08 21:35:25 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2021-10-08 21:35:25 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://api.unisender.com:443
+2021-10-08 21:35:25 DEBUG DefaultClientConnectionOperator:177 - Connecting to api.unisender.com:443
+2021-10-08 21:35:25 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2021-10-08 21:35:25 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2021-10-08 21:35:25 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2021-10-08 21:35:25 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2021-10-08 21:35:25 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2021-10-08 21:35:25 DEBUG DefaultClientConnection:274 - Sending request: POST /ru/api/importContacts?field_names%5B0%5D=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&data%5B0%5D%5B0%5D=ryzhik.sasha%40list.ru&format=json&data%5BN%5D%5B0%5D=cSVXw%40list.ru HTTP/1.1
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "POST /ru/api/importContacts?field_names%5B0%5D=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&data%5B0%5D%5B0%5D=ryzhik.sasha%40list.ru&format=json&data%5BN%5D%5B0%5D=cSVXw%40list.ru HTTP/1.1[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "Content-Length: 0[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "Host: api.unisender.com[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  >> "[\r][\n]"
+2021-10-08 21:35:25 DEBUG headers:278 - >> POST /ru/api/importContacts?field_names%5B0%5D=email&api_key=6jbr9h54ug9f93gq1um6k684swstsq5ozo5cj7oa&data%5B0%5D%5B0%5D=ryzhik.sasha%40list.ru&format=json&data%5BN%5D%5B0%5D=cSVXw%40list.ru HTTP/1.1
+2021-10-08 21:35:25 DEBUG headers:281 - >> Content-Type: application/json
+2021-10-08 21:35:25 DEBUG headers:281 - >> Accept: */*
+2021-10-08 21:35:25 DEBUG headers:281 - >> Content-Length: 0
+2021-10-08 21:35:25 DEBUG headers:281 - >> Host: api.unisender.com
+2021-10-08 21:35:25 DEBUG headers:281 - >> Connection: Keep-Alive
+2021-10-08 21:35:25 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.10)
+2021-10-08 21:35:25 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2021-10-08 21:35:25 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "server: nginx[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "date: Fri, 08 Oct 2021 18:35:26 GMT[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "content-type: application/json; charset=utf-8[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "transfer-encoding: chunked[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "set-cookie: US_SESSID=32cf0f4ba6216648649b67a35e053514; path=/; secure; HttpOnly; SameSite=lax[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "expires: Fri, 08 Oct 2021 18:35:26 GMT[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "last-modified: Fri, 08 Oct 2021 18:35:26 GMT[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "pragma: no-cache[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "x-username: ryzhik.sasha@list.ru[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "x-userid: 4594492[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "x-session-id: 32cf0f4ba6216648649b67a35e053514[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "cache-control: max-age=0, must-revalidate, private[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "content-encoding: gzip[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "x-robots-tag: noindex,nofollow[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "x-powered-by: Unisender[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "[\r][\n]"
+2021-10-08 21:35:25 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2021-10-08 21:35:25 DEBUG headers:262 - << HTTP/1.1 200 OK
+2021-10-08 21:35:25 DEBUG headers:265 - << server: nginx
+2021-10-08 21:35:25 DEBUG headers:265 - << date: Fri, 08 Oct 2021 18:35:26 GMT
+2021-10-08 21:35:25 DEBUG headers:265 - << content-type: application/json; charset=utf-8
+2021-10-08 21:35:25 DEBUG headers:265 - << transfer-encoding: chunked
+2021-10-08 21:35:25 DEBUG headers:265 - << set-cookie: US_SESSID=32cf0f4ba6216648649b67a35e053514; path=/; secure; HttpOnly; SameSite=lax
+2021-10-08 21:35:25 DEBUG headers:265 - << expires: Fri, 08 Oct 2021 18:35:26 GMT
+2021-10-08 21:35:25 DEBUG headers:265 - << last-modified: Fri, 08 Oct 2021 18:35:26 GMT
+2021-10-08 21:35:25 DEBUG headers:265 - << pragma: no-cache
+2021-10-08 21:35:25 DEBUG headers:265 - << x-username: ryzhik.sasha@list.ru
+2021-10-08 21:35:25 DEBUG headers:265 - << x-userid: 4594492
+2021-10-08 21:35:25 DEBUG headers:265 - << x-session-id: 32cf0f4ba6216648649b67a35e053514
+2021-10-08 21:35:25 DEBUG headers:265 - << cache-control: max-age=0, must-revalidate, private
+2021-10-08 21:35:25 DEBUG headers:265 - << content-encoding: gzip
+2021-10-08 21:35:25 DEBUG headers:265 - << x-robots-tag: noindex,nofollow
+2021-10-08 21:35:25 DEBUG headers:265 - << x-powered-by: Unisender
+2021-10-08 21:35:25 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2021-10-08 21:35:25 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:545 - Parsing response as: application/json; charset=utf-8
+2021-10-08 21:35:25 DEBUG wire:73 -  << "61[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]5[0x8b][0xc1][\n]"
+2021-10-08 21:35:25 DEBUG wire:87 -  << "[0x80] [0x10][0x5][0xff][0xe5][0x9d]=T[0xc7][0xfd][0x95][0x88]Xp[0x9]a[0xd3][0xd0][0xb5][0xe][0xe2][0xbf][0x7]F[0xb7]a[0x98]i[0xc8]R[0xaa][0x1a][0xa8][0xc1][0x92][0xb1][0x82][0x16][0x87][0x10][0x8b]d[0x13][0xf][0x9a][0x1c][0xea][0xe5]y[0xf0][0xec][0xe0]E[0xe5][0xf7]Q[0x9e]]N[0xe]ZF[0x16][0xe2][0xcd][0x1a][0xbe]E[0xd3][0x1]Z[0xb7][0xde]_[0x8][0xe1][0xdf]Z_[0x0][0x0][0x0]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "0[\r][\n]"
+2021-10-08 21:35:25 DEBUG wire:73 -  << "[\r][\n]"
+2021-10-08 21:35:25 DEBUG RequestSpecificationImpl$RestAssuredHttpBuilder:548 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2021-10-08 21:35:25 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@670342a2
+2021-10-08 21:35:25 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
